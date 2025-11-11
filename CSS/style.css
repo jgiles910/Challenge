@@ -1,0 +1,99 @@
+*{
+
+    box-sizing: border-box;
+    color: rgb(80, 80, 80);
+    font-family:"Roboto Condensed";
+}
+body{
+    
+    padding-top: 42px;
+}
+
+.bg1{
+  
+    position: relative;
+}
+.bg1>img{
+    height: 500px;
+      opacity: 30%;
+    width: 100%;
+}
+.bg1>div {
+    padding-top: 60px;
+    position: absolute;
+    top: 0px;
+}
+.bg1>div>p{
+    margin: 0px;
+    font-size: 30px;
+}
+.bg1>div>h2{
+    margin: 0px;
+    font-size: 50px;
+    position: sticky;
+    top: 20px;
+}
+h1{
+    margin: 0px;
+    font-size: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+}
+header{
+    z-index: 10;
+    background-color: rgb(144, 249, 239);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 50px;
+    align-content: center;
+    padding-left: 300px;
+}
+
+nav{
+    z-index: 11;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    height: 50px;
+    position: fixed;
+    width: 50%;
+    top: 0;
+    font-size: 15px;
+    right: 0px;
+}
+
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+ 
+}
+
+a{
+     text-decoration: none;
+}
+li>a:hover{
+    border-bottom: solid rgb(80, 80, 80) 1.3px;
+    transition:70ms;
+}
+#ticket{
+    padding: 10px 20px 10px 20px;
+    margin: 10px;
+    border-radius: 20px;
+    background-color: rgb(255, 236, 127);
+}
+
+footer{
+    border-top: solid black 2px;
+    padding: 0px;
+    height: 300px;
+    background-color: rgb(144, 249, 239);
+}
+footer > h2{
+    text-align: center;
+}
+footer li{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
