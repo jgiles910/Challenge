@@ -1,37 +1,22 @@
 *{
-
+    
     box-sizing: border-box;
-    color: rgb(80, 80, 80);
+    color: rgb(254, 254, 254);
     font-family:"Roboto Condensed";
 }
 body{
-    
+    margin: 0px;
+    width: 100%;
+    background-image: url(/media/bg/foto-del-patron-de-textura-de-la-pared.jpg);
+    background-size: cover;
+   
     padding-top: 42px;
 }
-
-.bg1{
-  
-    position: relative;
-}
-.bg1>img{
-    height: 500px;
-      opacity: 30%;
-    width: 100%;
-}
-.bg1>div {
-    padding-top: 60px;
-    position: absolute;
-    top: 0px;
-}
-.bg1>div>p{
-    margin: 0px;
-    font-size: 30px;
-}
-.bg1>div>h2{
-    margin: 0px;
-    font-size: 50px;
-    position: sticky;
-    top: 20px;
+nav>ul>li:nth-child(1), nav>ul>li:nth-child(2){
+    background-color: rgba(0, 0, 0, 0.235);
+    border-radius: 4px;
+    padding: 3px;
+    font-weight: 400;
 }
 h1{
     margin: 0px;
@@ -41,15 +26,18 @@ h1{
 }
 header{
     z-index: 10;
-    background-color: rgb(144, 249, 239);
+    background-color: rgb(255, 255, 255);
     position: fixed;
     width: 100%;
     top: 0;
     height: 50px;
     align-content: center;
-    padding-left: 300px;
+    border-bottom: solid rgb(255, 255, 255) 1px;
 }
-
+header h1{
+   margin-left: 300px;
+    padding-top: 13px;
+}
 nav{
     z-index: 11;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -76,7 +64,46 @@ li>a:hover{
     border-bottom: solid rgb(80, 80, 80) 1.3px;
     transition:70ms;
 }
+.bg1{
+    position: relative;
+}
+.bg1>img{
+    height: 690px;
+    opacity: 70%;
+    width: 100%;
+    filter: brightness(70%);
+}
+
+
+.bg1>div {
+    padding-top: 20px;
+    position: absolute;
+    top: 0px;
+    margin: 0px 200px 0px 200px;
+}
+.bg1>div>p{
+    color: white;
+    width: 100%;
+    margin: 0px;
+    font-size: 30px;
+    letter-spacing: 1.2px;
+    text-align: center;
+    padding: 60px;
+
+}
+
+
+.bg1>div>h2{
+    color: white;
+    font-weight: 400;
+    margin: 0px;
+    font-size: 50px;
+    top: 10px;
+    text-align: center;
+}
+
 #ticket{
+    color: rgb(102, 102, 102);
     padding: 10px 20px 10px 20px;
     margin: 10px;
     border-radius: 20px;
@@ -84,16 +111,51 @@ li>a:hover{
 }
 
 footer{
-    border-top: solid black 2px;
+    margin: 0px;
+    border-top: solid rgb(255, 255, 255) 3px;
     padding: 0px;
-    height: 300px;
-    background-color: rgb(144, 249, 239);
-}
-footer > h2{
+    height: 400px;
     text-align: center;
 }
+.img{
+   background-image: url(/media/bg/foto-del-patron-de-textura-de-la-pared.jpg);
+     
+    width: 100%;
+    margin: 0px;
+    background-size: cover;
+    height: 100%;
+    
+}
+
+footer>.img{
+    padding: 20px;
+}
+
+footer>div>h2{
+  color: white;
+  font-weight: 400;
+  border-bottom: solid white 3px;
+  
+  display: inline;
+}
+
 footer li{
+    color: rgb(210, 210, 210);
+    padding: 10px;
+    
+    font-weight: 600;
+    margin: 0px;
+    font-size: 50px;
+    top: 10px;
+    text-align: center;
     margin-top: 30px;
-    font-size: 20px;
+    font-size: 24px;
+}
+
+footer li:hover{
+    border-bottom: solid white 1px;
+    cursor: pointer;
+    transform: scale(1.05);
+     transition: 300ms;
 }
 
