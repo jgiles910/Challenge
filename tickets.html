@@ -9,6 +9,12 @@
             background-color: beige;
             font-family: 'Courier New', Courier, monospace;
         }
+        #calculateFinalPrize{
+            align-self: center;
+            left: 700px;
+            width: 100px;
+            size: 30px;
+        }
     </style>
 </head>
 
@@ -21,55 +27,84 @@
     <ul>
    <li> <label for="fname">Full Name:</label>
     <input type="text" id="fname" name="fname"></li>
+    <p id="error"></p>
     <li><label for="email">Email:</label>
     <input type="email" id="email" name="emal"></li>
+    <p id="error"></p>
     <li><label for="visit">Visit day:</label>
-    <input type="date" id="visit" name="visit"></li> <br>
+    <input type="date" id="visit" name="visit"></li> 
+    <p id="pointers"></p>
+    <br>
 
     <li> <label for="select">Select the time slot you prefer:</label>
     <select name="select" id="select" >
     <option value="" selected="selected"> Select slot</option>
-    <option value="30min"> 30 minutes</option>
-    <option value="1h"> 1 hour</option>
-    <option value="1h30min"> 1 hour and 30 minutes</option>
-    <option value="2h"> 2 hours</option>
-    </select></li><br>
+    <option value="9:00"> 9:00-10:30</option>
+    <option value="10:30"> 10:30-12:00</option>
+    <option value="12:00"> 12:00-13:30</option>
+    <option value="13:30"> 13:30-15:00</option>
+    <option value="15:00"> 15:00-16:30</option>
+    <option value="16:30"> 16:30-18:00</option>
+    <option value="18:00"> 18:00-19:30</option>
+    <option value="15:00"> 19:30-21:00</option>
+    </select>
+    </li>
+    <p id="pointers"></p>
+    <br>
     
     <li> Select the ticket type you want to buy:</li>
     <ul id="type"> 
         <li> Adult(12€)<input type="radio"></li>
         <li> Student(8€) <input type="radio"></li>
         <li> Child(5€) <input type="radio"></li>
-    </ul><br>
+    </ul>
+    <p id="pointers"></p>
+    <br>
 
    <li> <label for="quantity">Enter the ticket quantity you want:</label>
-    <input type="text" id="quantity" name="quantity"></li><br>
+    <input type="text" id="quantity" name="quantity"></li>
+    <p id="pointers"></p>
+    <br>
 
     <li> Would you like to have a guided visit? <input type="checkbox" id="checkbox"></li><br>
 
     <li> <label for="discount">If you are in posesion of any discount code please enter here:</label>
         <input type="text" id="discount" name="discount"></li><br><br>
 
-        <input type="submit" value="Calculate">
+        <input type="submit" id="calculateFinalPrize" value="Calculate" onclick="calculateFinalPrize()">
     </ul>
     </div>
     <br>
-    <p id="try"></p>
+    <p id="error"></p>
+    <p id="sumary"></p>
 </body>
 
-    <script>
-    var name=document.getElementById('fname').value;
-    var email=document.getElementById('email').value;
-    var vdate=document.getElementById('visit').value;
-    var tslot=document.getElementById('select').value;
-    var quantity=parseInt(document.getElementById('quantity').value);
-    var type=document.getElementById('type').value;
-    var guided=document.getElementById('checkbox').value;
-    var discount=document.getElementById('discount').value;
-    var price=0;
-    var correct=true;
+    <script> 
+        function calculateFinalPrize(){
+            var name=document.getElementById("fname").value;
+            var email=document.getElementById("email").value;
+            var vdate=document.getElementById("visit").value;
+            var tslot=document.getElementById("select").value;
+            var quantity=parseInt(document.getElementById("quantity").value);;
+            var type=document.getElementById("type").value;
+            var guided=document.getElementById("checkbox").checked;
+            var discount=document.getElementById("discount").value;
+            var price=0;
+            var correct=false;
+            document.getElementById("sumary").innerHTML="<p>" + quantity + "</p>";
+            document.getElementById("sumary").textContent=guided;
 
-    document.getElementById('try').innerHTML=quantity;
-
+            while(!correct){
+                if((name == null || email == null) || (quantity == null || tslot == null)){
+                    document.getElementById("error").innerHTML="<p>You must complete all the mandatory gaps(*)</p>";
+                    document.getElementById("pointers").innerHTML="<p>*</p>";
+                }else if (visit == null){
+                    document.getElementById("error").innerHTML="<p>You must complete all the mandatory gaps(*)</p>";
+                    document.getElementById("pointers").innerHTML="<p>*</p>";
+                }else{
+                    correct=true;
+                }
+        }
+    }
     </script>
 </html>
