@@ -1,7 +1,7 @@
 *{
     
     box-sizing: border-box;
-    color: rgb(254, 254, 254);
+    color: rgb(66, 66, 66);
     font-family:"Roboto Condensed";
 }
 body{
@@ -9,7 +9,6 @@ body{
     width: 100%;
     background-image: url(/media/bg/foto-del-patron-de-textura-de-la-pared.jpg);
     background-size: cover;
-   
     padding-top: 42px;
 }
 nav>ul>li:nth-child(1), nav>ul>li:nth-child(2){

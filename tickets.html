@@ -4,107 +4,159 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+</head>
     <style>
-        .body{
-            background-color: beige;
+        #form{
+            
+            background-color: rgb(126, 126, 126);
             font-family: 'Courier New', Courier, monospace;
         }
         #calculateFinalPrize{
             align-self: center;
-            left: 700px;
-            width: 100px;
-            size: 30px;
+            width: 120px;
+        }
+        #error{
+            color: red;
+        }
+        .ulform{
+            display: flex;
+            flex-direction: column;
         }
     </style>
 </head>
 
-
-
 <body>
-    <div class="body">
-    <form action="" method="get">
-    <h1>Ticket purchase</h1>
-    <ul>
-   <li> <label for="fname">Full Name:</label>
-    <input type="text" id="fname" name="fname"></li>
-    <p id="error"></p>
-    <li><label for="email">Email:</label>
-    <input type="email" id="email" name="emal"></li>
-    <p id="error"></p>
-    <li><label for="visit">Visit day:</label>
-    <input type="date" id="visit" name="visit"></li> 
-    <p id="pointers"></p>
-    <br>
+    <header>
+       <div class="img">
+        <h1>
+           <a href="home.html">The Museum</a> 
+        </h1>
+        </div>
+    </header>
+    <nav>
+      <ul>
+      <li><a href="home.html">Home</a></li>
+      <li><a href="exhibition.html">Exhibition</a></li>
+      
+      <li id="ticketLi"><a  id="ticket" href="tickets.html">Get your ticket!</a></li> 
+      </ul>
+        
+    </nav>
+<h1>Ticket purchase</h1>
 
-    <li> <label for="select">Select the time slot you prefer:</label>
-    <select name="select" id="select" >
-    <option value="" selected="selected"> Select slot</option>
-    <option value="9:00"> 9:00-10:30</option>
-    <option value="10:30"> 10:30-12:00</option>
-    <option value="12:00"> 12:00-13:30</option>
-    <option value="13:30"> 13:30-15:00</option>
-    <option value="15:00"> 15:00-16:30</option>
-    <option value="16:30"> 16:30-18:00</option>
-    <option value="18:00"> 18:00-19:30</option>
-    <option value="15:00"> 19:30-21:00</option>
-    </select>
-    </li>
-    <p id="pointers"></p>
-    <br>
-    
-    <li> Select the ticket type you want to buy:</li>
-    <ul id="type"> 
-        <li> Adult(12€)<input type="radio"></li>
-        <li> Student(8€) <input type="radio"></li>
-        <li> Child(5€) <input type="radio"></li>
+<form id="form">
+    <ul class="ulform">
+        <li>
+            <label for="fname">Full Name:</label>
+            <input type="text" id="fname">
+        </li><br>
+
+        <li>
+            <label for="email">Email:</label>
+            <input type="email" id="email">
+        </li><br>
+
+        <li>
+            <label for="visit">Visit day:</label>
+            <input type="date" id="visit">
+        </li><br>
+
+        <li>
+            Select the time slot you prefer:
+            <select id="select">
+                <option value="" selected>Select slot</option>
+                <option value="9:00">9:00-10:30</option>
+                <option value="10:30">10:30-12:00</option>
+                <option value="12:00">12:00-13:30</option>
+                <option value="13:30">13:30-15:00</option>
+                <option value="15:00">15:00-16:30</option>
+                <option value="16:30">16:30-18:00</option>
+                <option value="18:00">18:00-19:30</option>
+                <option value="19:30">19:30-21:00</option>
+            </select>
+        </li><br>
+
+        <li>Select the ticket type you want to buy:</li>
+        <ul>
+            <li>Adult (12€) <input type="radio" name="ticketType" value="adult"></li>
+            <li>Student (8€) <input type="radio" name="ticketType" value="student"></li>
+            <li>Child (5€) <input type="radio" name="ticketType" value="child"></li>
+        </ul><br>
+
+        <li>
+            <label for="quantity">Enter the ticket quantity you want:</label>
+            <input type="number" id="quantity" min="1">
+        </li><br>
+
+        <li>
+            Would you like a guided visit? 
+            <input type="checkbox" id="checkbox">
+        </li><br>
+
+        <li>
+            <label for="discount">Discount code:</label>
+            <input type="text" id="discount">
+        </li>
+
+        <br>
+        <input type="submit" id="calculateFinalPrize" value="Calculate">
     </ul>
-    <p id="pointers"></p>
-    <br>
-
-   <li> <label for="quantity">Enter the ticket quantity you want:</label>
-    <input type="text" id="quantity" name="quantity"></li>
-    <p id="pointers"></p>
-    <br>
-
-    <li> Would you like to have a guided visit? <input type="checkbox" id="checkbox"></li><br>
-
-    <li> <label for="discount">If you are in posesion of any discount code please enter here:</label>
-        <input type="text" id="discount" name="discount"></li><br><br>
-
-        <input type="submit" id="calculateFinalPrize" value="Calculate" onclick="calculateFinalPrize()">
-    </ul>
-    </div>
-    <br>
-    <p id="error"></p>
-    <p id="sumary"></p>
+</form>
 </body>
 
-    <script> 
-        function calculateFinalPrize(){
-            var name=document.getElementById("fname").value;
-            var email=document.getElementById("email").value;
-            var vdate=document.getElementById("visit").value;
-            var tslot=document.getElementById("select").value;
-            var quantity=parseInt(document.getElementById("quantity").value);;
-            var type=document.getElementById("type").value;
-            var guided=document.getElementById("checkbox").checked;
-            var discount=document.getElementById("discount").value;
-            var price=0;
-            var correct=false;
-            document.getElementById("sumary").innerHTML="<p>" + quantity + "</p>";
-            document.getElementById("sumary").textContent=guided;
+<p id="error"></p>
+<p id="summary"></p>
 
-            while(!correct){
-                if((name == null || email == null) || (quantity == null || tslot == null)){
-                    document.getElementById("error").innerHTML="<p>You must complete all the mandatory gaps(*)</p>";
-                    document.getElementById("pointers").innerHTML="<p>*</p>";
-                }else if (visit == null){
-                    document.getElementById("error").innerHTML="<p>You must complete all the mandatory gaps(*)</p>";
-                    document.getElementById("pointers").innerHTML="<p>*</p>";
-                }else{
-                    correct=true;
-                }
-        }
+    <script>
+
+    document.getElementById("form").addEventListener("submit", function(event){
+ 
+    const name = document.getElementById("fname").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const visit = document.getElementById("visit").value;
+    const tslot = document.getElementById("select").value;
+    const quantity = parseInt(document.getElementById("quantity").value);
+    const guided = document.getElementById("checkbox").checked;
+    const discount = document.getElementById("discount").value.trim();
+    const type = document.querySelector("input[name='ticketType']:checked");
+
+    const error = document.getElementById("error");
+    const summary = document.getElementById("summary");
+    error.textContent = "";
+    summary.textContent = "";
+
+    if(!name || !email || !visit || !tslot || !quantity || !type){
+        error.textContent = "You must complete all mandatory fields.";
+        return;
     }
-    </script>
+
+    let price = 0;
+    if(type.value === "adult") price = 12;
+    if(type.value === "student") price = 8;
+    if(type.value === "child") price = 5;
+
+    let total = price * quantity;
+
+    if(guided){ 
+        total += 5;
+    }
+    if(discount === "MUSEUM10"){
+        total *= 0.9;
+    }
+    summary.innerHTML = `
+        <strong>Summary:</strong><br>
+        Name: ${name}<br>
+        Tickets: ${quantity} (${type.value})<br>
+        Slot: ${tslot}<br>
+        Guided visit: ${guided ? "Yes" : "No"}<br>
+        Total price: ${total.toFixed(2)}€
+    `;
+});
+
+</script>
+
 </html>
