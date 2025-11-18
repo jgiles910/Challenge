@@ -10,9 +10,12 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
     <style>
+
+        *{
+            color: rgb(255, 253, 253);
+        }
         #form{
             
-            background-color: rgb(126, 126, 126);
             font-family: 'Courier New', Courier, monospace;
         }
         #calculateFinalPrize{
@@ -25,6 +28,12 @@
         .ulform{
             display: flex;
             flex-direction: column;
+        }
+        input{
+            color: black;
+        }
+        option{
+            color: black;
         }
     </style>
 </head>
@@ -45,7 +54,7 @@
       <li id="ticketLi"><a  id="ticket" href="tickets.html">Get your ticket!</a></li> 
       </ul>
         
-    </nav>
+    </nav><br>
 <h1>Ticket purchase</h1>
 
 <form id="form">
@@ -67,7 +76,7 @@
 
         <li>
             Select the time slot you prefer:
-            <select id="select">
+            <select id="select" style="color: black;">
                 <option value="" selected>Select slot</option>
                 <option value="9:00">9:00-10:30</option>
                 <option value="10:30">10:30-12:00</option>
@@ -81,7 +90,7 @@
         </li><br>
 
         <li>Select the ticket type you want to buy:</li>
-        <ul>
+        <ul class="ulform">
             <li>Adult (12€) <input type="radio" name="ticketType" value="adult"></li>
             <li>Student (8€) <input type="radio" name="ticketType" value="student"></li>
             <li>Child (5€) <input type="radio" name="ticketType" value="child"></li>
@@ -135,9 +144,15 @@
     }
 
     let price = 0;
-    if(type.value === "adult") price = 12;
-    if(type.value === "student") price = 8;
-    if(type.value === "child") price = 5;
+    if(type.value === "adult"){
+         price = 12;
+    }
+    if(type.value === "student"){
+        price = 8;
+    }
+    if(type.value === "child"){ 
+        price = 5;
+    }
 
     let total = price * quantity;
 
@@ -158,5 +173,18 @@
 });
 
 </script>
+
+<footer>
+        
+        <div class="img">
+            <h2>You can also find us right here!</h2>
+          <ul>
+            <li>Youtube</li>
+            <li>Instagram</li>
+            <li>Tumblr</li>
+            <li>Twitter</li>
+          </ul>
+          </div>
+      </footer> 
 
 </html>
