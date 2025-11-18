@@ -18,6 +18,7 @@ nav>ul>li:nth-child(1), nav>ul>li:nth-child(2){
     padding: 3px;
     font-weight: 400;
 }
+
 h1{
     margin: 0px;
     font-size: 20px;
@@ -173,7 +174,7 @@ footer li:hover{
     justify-content: center;
     flex-direction: column;
     margin: 10px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(107, 107, 107, 0.833);
     width: 31%;
     height: 650px;
     position: relative;
@@ -209,12 +210,19 @@ footer li:hover{
     height: 150px;
     background-color: #70770c;
 }
+#rojo1{
+    background-color: #7c3b3a;
+}
 
 .rothkocuadrado{
  width: 100%;
-  background-color: #7c3b3a;
-  height: 298px;
+ height: 298px;
 }
+
+#naranja{
+background-color: #c53f24;
+}
+
 .rothkocuadrado>.rothkocuadrado{
     background-color: rgb(0, 0, 0);
     margin:10px;
