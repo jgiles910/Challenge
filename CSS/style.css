@@ -1,7 +1,7 @@
 *{
-    
+    border-collapse: collapse;
     box-sizing: border-box;
-    color: rgb(66, 66, 66);
+    color: rgb(255, 255, 255);
     font-family:"Roboto Condensed";
 }
 body{
@@ -246,4 +246,32 @@ background-color: #c53f24;
     background-color: #7c3b3a;
     height: 90%;
     justify-content: center;
+}
+
+.tabla1{
+    margin: 10px 0px 10px 0px;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    
+}
+
+.tabla2{
+
+   font-size: 22px;
+    padding: 20px;
+    border-radius: 8px;
+    background-color: rgba(93, 93, 93, 0.562);
+    width: 46%;
+  text-align: justify;
+  align-content: center;
+}
+
+th{
+    padding: 25px;
+}
+.tabla2 tr td{
+    padding: 10px;
+    border-collapse: collapse;
+    border: solid black 2px;
 }
