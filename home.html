@@ -10,40 +10,36 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="site-header">
        <div class="img">
         <h1>
-           <a href="home.html">The Museum</a> 
+           <a href="home.html">The Rothko Museum</a>
         </h1>
         </div>
+        <nav aria-label="Main navigation" class="main-nav">
+          <ul>
+            <li><a class="active" href="home.html">Home</a></li>
+            <li><a href="exhibition.html">Exhibitions</a></li>
+            <li><a id="ticket" href="tickets.html">Tickets</a></li>
+          </ul>
+        </nav>
     </header>
-    <nav>
-      <ul>
-      <li><a href="home.html">Home</a></li>
-      <li><a href="exhibition.html">Exhibition</a></li>
-      
-      <li id="ticketLi"><a  id="ticket" href="tickets.html">Get your ticket!</a></li> 
-      </ul>
-        
-    </nav>
     <div class="bg1">
-      <img src="media/bg/paleta-de-colores-de-colores-de-sombra-de-ojos.jpg" alt="webpage background">
+      <img src="media/bg/paleta-de-colores-de-colores-de-sombra-de-ojos.jpg" alt="abstract color background">
         <div>
-          <h2>Bienvenido</h2>
+          <h2>Welcome</h2>
 
-          <p> 
-          ¡Bienvenidos al Museo Rothko de Bilbao, un espacio dedicado a sumergirse en la profunda y evocadora obra de uno de los grandes maestros del color del siglo XX! Ubicado en el corazón de Vizcaya, nuestro museo es un refugio para los amantes del arte y la cultura. Fundado por los apasionados coleccionistas Jonathan Giles y Jon Ander, cada rincón de este museo ha sido diseñado para ofrecer una experiencia única, donde la intensidad emocional y la complejidad de las obras de Rothko cobran vida. Acompáñanos en este viaje visual y sensorial que invita a la reflexión y a la conexión con el arte en su forma más pura. ¡Explora, siente y déjate llevar por el legado eterno de Rothko!
+          <p>
+          Welcome to the Rothko Museum — a small, fictional museum celebrating the emotional power of color and abstraction. Founded by two passionate collectors, our space is designed to invite quiet reflection and close looking. Explore rotating exhibitions, learn about the artist, and plan your visit using the Tickets page.
           </p>
         </div>
+        <div class="promo" aria-hidden="true">Featured exhibition: Color &amp; Light</div>
     </div>
     <div class="bg1">
-      <img src="media/bg/paleta-de-colores-de-colores-de-sombra-de-ojos.jpg" alt="webpage background">
+      <img src="media/bg/paleta-de-colores-de-colores-de-sombra-de-ojos.jpg" alt="abstract color background">
         <div>
-          <h2>¿Quien fue Mark Rothko?</h2>
-          <p>Mark Rothko, nacido como Marcus Rothkowitz en 1903 en Letonia, es considerado uno de los artistas más influyentes del siglo XX, famoso por su papel en el desarrollo del expresionismo abstracto. Emigró a los Estados Unidos en 1913, donde se estableció en Portland, Oregón. A lo largo de su vida, Rothko exploró diversas corrientes artísticas, desde el surrealismo hasta el simbolismo, pero es especialmente reconocido por sus pinturas a gran escala que utilizan bloques de color simples y densos.
-          <br>
-          Sus obras son un testimonio de su interés por expresar emociones profundas y universales mediante la pura experiencia del color y la forma. A través de grandes composiciones de tonos vibrantes y a menudo contrastantes, Rothko busca provocar una respuesta emocional en el espectador, invitándolo a una reflexión contemplativa.
-          </p>
+          <h2>Who was Mark Rothko?</h2>
+          <p>Mark Rothko (1903–1970) was an influential painter known for large-scale color field paintings that aim to engage viewers emotionally. His work strips away figuration in favor of luminous fields of color, encouraging deep, contemplative attention.</p>
         </div>
     </div>
    
@@ -51,47 +47,47 @@
     <table class="tabla2">
 
     <tr>
-      <th>Day of the week</th>
-      <th>Horario de apertura</th>
-      <th>Horario de cierre</th>
+      <th>Day</th>
+      <th>Opens</th>
+      <th>Closes</th>
     </tr>
       <tr>
-        <td>Lunes</td>
-        <td>10:00 AM</td>
-        <td>18:00 PM</td>
+        <td>Monday</td>
+        <td>10:00</td>
+        <td>18:00</td>
       </tr>
       <tr>
-        <td>Martes</td>
-        <td>10:00 AM</td>
-        <td>18:00 PM</td>
+        <td>Tuesday</td>
+        <td>10:00</td>
+        <td>18:00</td>
       </tr>
       <tr>
-        <td>Miercoles</td>
-        <td>10:00 AM</td>
-        <td>18:00 PM</td>
+        <td>Wednesday</td>
+        <td>10:00</td>
+        <td>18:00</td>
       </tr>
       <tr>
-        <td>Jueves</td>
-        <td>10:00 AM</td>
-        <td>18:00 PM</td>
+        <td>Thursday</td>
+        <td>10:00</td>
+        <td>18:00</td>
       </tr>
       <tr>
-        <td>Viernes</td>
-        <td>10:00 AM</td>
-        <td>20:00 PM</td>
+        <td>Friday</td>
+        <td>10:00</td>
+        <td>20:00</td>
       </tr>
       <tr>
-        <td>Sabado</td>
-        <td>10:00 AM</td>
-        <td>20:00 PM</td>
+        <td>Saturday</td>
+        <td>10:00</td>
+        <td>20:00</td>
       </tr>
       <tr>
-        <td>Domingo</td>
-        <td>10:00 AM</td>
-        <td>14:00 PM</td>
+        <td>Sunday</td>
+        <td>10:00</td>
+        <td>14:00</td>
       </tr>
-    </table> 
-  </div> 
+    </table>
+  </div>
       <footer>
         
         <div class="img">
@@ -102,7 +98,8 @@
             <li>Tumblr</li>
             <li>Twitter</li>
           </ul>
-          </div>
-      </footer> 
+              </div>
+            </footer>
+            <div class="fixed-info" aria-hidden="true">Open daily 10:00–20:00</div>
 </body>
 </html>

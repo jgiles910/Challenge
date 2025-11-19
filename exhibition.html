@@ -10,65 +10,49 @@
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+     <header class="site-header">
        <div class="img">
         <h1>
-           <a href="home.html">The Museum</a> 
+          <a href="home.html">The Rothko Museum</a>
         </h1>
         </div>
-    </header>
-    <nav>
-      <ul>
-         <li><a href="home.html">Home</a></li>
-        <li><a href="exhibition.html">Exhibition</a></li>
-       <li><a  id="ticket" href="tickets.html">Get your ticket!</a></li> 
-      </ul>
-        
-    </nav>
+        <nav aria-label="Main navigation" class="main-nav">
+         <ul>
+          <li><a href="home.html">Home</a></li>
+          <li><a class="active" href="exhibition.html">Exhibitions</a></li>
+          <li><a id="ticket" href="tickets.html">Tickets</a></li>
+         </ul>
+        </nav>
+     </header>
 
   <section class="s1">
-    <div class="rothko">
-
-        <a href="https://i.etsystatic.com/54427661/r/il/6c7c86/6395384523/il_1588xN.6395384523_7zqo.jpg"><p>Pink on Green</p></a>
-        <div class="verde"></div>
-        <div class="rosa"></div>
-        <div class="verde"></div>
-      
+    <div class="rothko artwork" aria-labelledby="art1">
+        <p id="art1" class="art-title">Pink on Green</p>
+        <div class="verde" role="img" aria-label="green color block"></div>
+        <div class="rosa" role="img" aria-label="pink color block"></div>
+        <div class="verde" role="img" aria-label="green color block"></div>
+        <p class="caption">Uses margin, padding and border to create a layered composition.</p>
     </div>
-    
-    <div class="rothko"> 
-      
-  <a href="https://shop.tate.org.uk/dw/image/v2/BBPB_PRD/on/demandware.static/-/Sites-TateMasterShop/default/dw73621665/marrot159_black-on_maroon_1958_large.jpg?sw=265">
-    <p> Black on Maroon</p></a>
+
+    <div class="rothko artwork" aria-labelledby="art2"> 
+      <p id="art2" class="art-title">Black on Maroon</p>
         <div class="rothkocuadrado"  id="rojo1">
           <div class="rothkocuadrado" >
-           
-            <div class="marron"></div>
-            <div class="marron"></div>
+            <div class="marron" role="img" aria-label="maroon block"></div>
+            <div class="marron" role="img" aria-label="maroon block"></div>
           </div>
         </div>
+        <p class="caption">This artwork demonstrates padding and box-sizing on nested boxes.</p>
     </div>
-    <div class="rothko">
-      <a href="https://aprendersociales.blogspot.com/2009/02/mark-rothko-obra-en-serie.html">
-      <p> Black on Maroon</p></a>
+
+    <div class="rothko artwork" aria-labelledby="art3">
+      <p id="art3" class="art-title">Orange Field</p>
       <div class="rothkocuadrado" id="rojo1">
-        <div class="rothkocuadrado" id="naranja"></div>
+        <div class="rothkocuadrado" id="naranja" role="img" aria-label="orange block"></div>
       </div>
-      
+      <p class="caption">Simple rectangle with border and centered content using box model rules.</p>
     </div>
 
-     <div class="rothko">
-      
-      <p>hello</p>
-    </div>
-
-     <div class="rothko">
-      <p>hello</p>
-     </div>
-    
-     <div class="rothko">
-      <p>hello</p>
-     </div>
    </section>
 
   
@@ -83,6 +67,7 @@
             <li>Twitter</li>
           </ul>
           </div>
-      </footer> 
+      </footer>
+      <div class="fixed-info" aria-hidden="true">Open daily 10:00–20:00</div>
 </body>
 </html>
