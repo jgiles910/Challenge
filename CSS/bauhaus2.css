@@ -4,7 +4,7 @@
         grid-template-rows: 2fr 2fr 2fr 2fr;
         width: 450px;
         height: 350px;
-        padding: 20px 90px 10px 90px;
+        /* padding: 20px 90px 10px 90px; */
         gap: 5px;
     }
 
@@ -25,7 +25,7 @@
     .box2 {
         border: 5px rgb(28, 43, 43) solid;
         grid-column: 3 / span 1;
-        grid-row: 2/ span 4
+        grid-row: 2/ span 4;
         /* grid-column: 2 / span 3;
         grid-row: 1/ span 2 */
     }
