@@ -1,14 +1,14 @@
-    .container {
+    .secondBauhaus {
         display: grid;
         grid-template-columns: 2fr 2fr 2fr 2fr;
         grid-template-rows: 2fr 2fr 2fr 2fr;
         width: 450px;
         height: 350px;
-        /* padding: 20px 90px 10px 90px; */
+        padding-left: 20px;
         gap: 5px;
     }
 
-    .container div {
+    .secondBauhaus div {
 
         margin:-5px;
         display: flex;
@@ -17,41 +17,47 @@
         font-size: 25px;
     }
 
-    
-    .box1 {
-        border: 5px rgb(28, 43, 43) solid;
+    .secondBauhaus .one {
+        background-color: rgb(231, 231, 231);
+        border-left: 5px rgb(28, 43, 43) solid;
+        border-top: 5px rgb(28, 43, 43) solid;
     }
 
-    .box2 {
+    .secondBauhaus .two {
+        background-color: rgb(233, 18, 18);
         border: 5px rgb(28, 43, 43) solid;
         grid-column: 3 / span 1;
         grid-row: 2/ span 4;
-        /* grid-column: 2 / span 3;
-        grid-row: 1/ span 2 */
     }
 
-    .box3 {
+    .secondBauhaus .three {
+        background-color: rgb(231, 231, 231);
+        border-top: 5px rgb(28, 43, 43) solid;
+        border-right: 5px rgb(28, 43, 43) solid;
+        border-bottom: 5px rgb(28, 43, 43) solid;
+    }
+
+    .secondBauhaus .four {
+        background-color: rgb(41, 117, 194);
         border: 5px rgb(28, 43, 43) solid;
     }
 
-    .box4 {
+
+    .secondBauhaus .five {
+        background-color: rgb(231, 231, 231);
         border: 5px rgb(28, 43, 43) solid;
-        /* grid-row: 3 / span 2; */
     }
 
-
-    .box5 {
-        border: 5px rgb(28, 43, 43) solid;
-        /* grid-row: 3 / span 2;
-        grid-column: 2 / span 2; */
-    }
-
-    .box6{
+    .secondBauhaus .six{
+        background-color: rgb(226, 226, 8);
         border: 5px rgb(28, 43, 43) solid;
         grid-column: 2 / span 1;
         grid-row: 4 / span 2;
     }
 
-    .box7{
-        border: 5px rgb(28, 43, 43) solid;
+    .secondBauhaus .seven{
+        background-color: rgb(231, 231, 231);
+        border-right: 5px rgb(28, 43, 43) solid;
+        border-left: 5px rgb(28, 43, 43) solid;
+        border-bottom: 5px rgb(28, 43, 43) solid;
     }
