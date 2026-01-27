@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,6 +22,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
     rel="stylesheet">
 </head>
+
 
 <body>
   <header>
@@ -75,16 +77,120 @@
 
   <div class="firstBauhaus">
 
-    <div class="one"><span>1</span></div>
-    <div class="two"><span>2</span></div>
-    <div class="three"> <span>3</span></div>
-    <div class="four"><span>4</span></div>
-    <div class="five"><span>5</span></div>
-    <div class="six"> <span>6</span></div>
-    <div class="seven"> <span> 7</span></div>
+    <style>
+      .firstBauhaus>div>span {
+        color: black;
+        font-size: 30px;
+
+      }
+
+      .firstBauhaus>div {
+        border: solid black 3px;
+      }
+
+      .firstBauhaus {
+        margin: 10px;
+        width: 30%;
+        height: 100%;
+        padding: 60px;
+        border: solid rgb(0, 0, 0) 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        grid-auto-rows: minmax(100px, auto);
+        background-color: rgb(207, 207, 207);
+      }
+
+      .firstBauhaus>.one {
+        border-right: none;
+        background-color: rgb(184, 184, 184);
+        grid-column: 1;
+        grid-row: 1/4;
+        z-index: 1;
+      }
+
+      .firstBauhaus>.two {
+        background-color: rgb(190, 190, 190);
+        grid-column: 1/5;
+        grid-row: 3;
+      }
+
+      .firstBauhaus>.three {
+        border-right: none;
+        background-color: #ff9b1a;
+        grid-column: 2/5;
+        grid-row: 1;
+      }
+
+
+      .firstBauhaus>.four {
+        border-left: none;
+        background-color: #ff9b1a;
+        grid-column: 4/5;
+        grid-row: 1/6;
+      }
+
+      .firstBauhaus>.five {
+
+        background-color: rgb(253, 253, 253);
+        grid-column: 2;
+        grid-row: 1/5;
+        z-index: 2;
+      }
+
+      .firstBauhaus>.six {
+        border-left: solid 3px black;
+        border-top: none;
+        z-index: 2;
+        background-color: #ff9b1a;
+        grid-column: 4/5;
+        grid-row: 2/5;
+      }
+
+      .firstBauhaus>.seven {
+        border-left: none;
+        background-color: rgb(255, 255, 255);
+        grid-column: 4;
+        grid-row: 4;
+        z-index: 4;
+      }
+
+      .firstBauhaus>.eight {
+
+        background-color: #ff9b1a;
+        grid-column: 3/5;
+        grid-row: 5;
+      }
+
+      .firstBauhaus>.nine {
+
+        background-color: rgb(184, 184, 184);
+        grid-column: 1/4;
+        grid-row: 5;
+      }
+
+      .firstBauhaus>.ten {
+        border-top: solid white 0px;
+        background-color: rgb(255, 255, 255);
+        grid-column: 2/5;
+        z-index: 3;
+        grid-row: 4/5;
+      }
+    </style>
+    <div class="one"><span></span></div>
+    <div class="two"><span></span></div>
+    <div class="three"> <span></span></div>
+    <div class="four"><span></span></div>
+    <div class="five"><span></span></div>
+    <div class="six"> <span></span></div>
+    <div class="seven"> <span></span></div>
+    <div class="eight"><span></span></div>
+    <div class="nine"><span></span></div>
+    <div class="ten"> <span></span></div>
 
   </div>
 
+  <div class="secondBauhaus">
   <div class="secondBauhaus">
 
     <div class="one"></div>
@@ -99,19 +205,120 @@
 
   <div class="thirdBauhaus">
 
-    <div class="one"><span>1</span></div>
-    <div class="two"><span>2</span></div>
-    <div class="three"> <span>3</span></div>
-    <div class="four"><span>4</span></div>
-    <div class="five"><span>5</span></div>
-    <div class="six"> <span>6</span></div>
-    <div class="seven"> <span> 7</span></div>
+    <style>
+      .thirdBauhaus>div>span {
+        color: black;
+        font-size: 30px;
+
+      }
+
+      .thirdBauhaus>div {
+        border: solid black 3px;
+      }
+
+      .thirdBauhaus {
+        margin: 10px;
+        width: 30%;
+        height: 100%;
+        padding: 60px;
+        border: solid rgb(0, 0, 0) 30px;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 0px;
+        grid-auto-rows: minmax(100px, auto);
+        background-color: rgb(86, 86, 86);
+      }
+
+      .thirdBauhaus>.one {
+
+        background-color: rgb(255, 27, 27);
+        grid-column: 1/3;
+        grid-row: 1/3;
+
+      }
+
+      .thirdBauhaus>.two {
+        background-color: rgb(255, 255, 255);
+        grid-column: 3/5;
+        grid-row: 1/3;
+      }
+
+      .thirdBauhaus>.three {
+
+        background-color: #ffffff;
+        grid-column: 1/3;
+        grid-row: 3;
+      }
+
+
+      .thirdBauhaus>.four {
+
+        background-color: #ffffff;
+        grid-column: 3/5;
+        grid-row: 3;
+      }
+
+      .thirdBauhaus>.five {
+        width: 63%;
+        background-color: rgb(255, 234, 0);
+        grid-column: 1;
+        grid-row: 4;
+        z-index: 1;
+      }
+
+      .thirdBauhaus>.six {
+        height: 150px;
+        background-color: #ffffff;
+        grid-column: 1/3;
+        grid-row: 4;
+      }
+
+      .thirdBauhaus>.seven {
+        width: 200px;
+
+        background-color: rgb(252, 252, 252);
+        grid-column: 3;
+        grid-row: 4;
+
+      }
+
+      .thirdBauhaus>.eight {
+
+        background-color: #ffffff;
+        grid-column: 4/5;
+        grid-row: 4;
+      }
+
+      .thirdBauhaus>.nine {
+        background-color: rgb(16, 115, 191);
+        grid-column: 3;
+        grid-row: 4;
+        z-index: 1;
+        height: 80%;
+      }
+    </style>
+
+    <div class="one"><span></span></div>
+    <div class="two"><span></span></div>
+    <div class="three"> <span></span></div>
+    <div class="four"><span></span></div>
+    <div class="five"><span></span></div>
+    <div class="six"> <span></span></div>
+    <div class="seven"> <span></span></div>
+    <div class="eight"><span></span></div>
+    <div class="nine"><span></span></div>
 
   </div>
 
   <div class="tabla1">
+  <div class="tabla1">
     <table class="tabla2">
 
+      <tr>
+        <th>Schedule</th>
+        <th>Visit begins</th>
+        <th>Visit ends</th>
+      </tr>
       <tr>
         <th>Schedule</th>
         <th>Visit begins</th>
@@ -122,40 +329,50 @@
         <td>9:00 PM</td>
         <td>10:30 PM</td>
 
+
       </tr>
       <tr>
         <td>10:30 AM</td>
         <td>12:00 AM</td>
 
+
       </tr>
+      <tr>
       <tr>
         <td>12:00 AM</td>
         <td>13:30 PM</td>
 
+
       </tr>
+      <tr>
       <tr>
         <td>13:30 PM</td>
         <td>15:00 PM</td>
+
 
       </tr>
       <tr>
         <td>15:00 PM</td>
         <td>16:30 PM</td>
+
 
       </tr>
       <tr>
         <td>16:30 PM</td>
         <td>18:00 PM</td>
+
 
       </tr>
       <tr>
         <td>18:00 PM</td>
         <td>19:30 PM</td>
+
 
       </tr>
       <tr>
         <td>19:30 PM</td>
         <td>21:00 PM</td>
+
 
       </tr>
 
@@ -174,6 +391,23 @@
       </ul>
     </div>
   </footer>
+
+
+    </table>
+  </div>
+  <footer>
+
+    <div class="img">
+      <h2>You can also find us right here!</h2>
+      <ul>
+        <li>Youtube</li>
+        <li>Instagram</li>
+        <li>Tumblr</li>
+        <li>Twitter</li>
+      </ul>
+    </div>
+  </footer>
 </body>
+
 
 </html>
