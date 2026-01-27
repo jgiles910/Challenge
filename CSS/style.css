@@ -61,15 +61,38 @@ header h1 {
 
 .navbar-nav{
     display: flex;
-    position: absolute;
+    position: relative;
+    right: 37vw;
+    width: 70vw;
+
+}
+
+/* boton de busqueda */
+.buscador{
+    background-color: #f2f2f2;
+}
+
+.d-flex{
+    display: flex;
+    position: relative;
+    width: 16vw;
+    right: 36vw;
+    top: 4.5vh;
+}
+
+#ticketLi{
+    display: block;
+    position: relative;
+    top: 3vh;
+    scale:1.2;
 }
 
 /* Texto THe Rothko Museum */
 .navbar-brand{
     display: flex;
     position: relative;
-    right: 200px;
-    top: 20px;
+    right: 10vw;
+    top: 2.2vh;
     color: white;
     font-size: 3em;
 }
