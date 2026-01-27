@@ -1,28 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tickets</title>
     <!-- BOOTSTRAP -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-    crossorigin="anonymous"></script>
-  <!-- //BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- //BOOTSTRAP -->
     <link rel="stylesheet" href="CSS/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-  
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <style>
-/* 
+        /* 
         *{
             color: rgb(255, 253, 253);
         } */
-        #form{
-            
+        #form {
+
             font-size: 30px;
             padding: 70px;
             border-radius: 10px;
@@ -30,14 +32,17 @@
             font-family: 'Courier New', Courier, monospace;
             border: rgb(255, 255, 255) solid 3px;
         }
-        #calculateFinalPrize{
+
+        #calculateFinalPrize {
             margin-top: 20px;
             font-size: 20px;
         }
-        #visit{
+
+        #visit {
             font-size: 20px;
         }
-        form>h1{
+
+        form>h1 {
             font-weight: 200;
             letter-spacing: 20px;
             padding: 20px 10px 20px 10px;
@@ -48,41 +53,48 @@
             border-radius: 0px 0px 10px 10px;
             border-top: 1px solid rgb(255, 255, 255);
         }
-        select{
+
+        select {
             font-size: 20px;
         }
-        input{
+
+        input {
             padding: 5px;
             border-radius: 7px;
         }
-        #calculateFinalPrize{
+
+        #calculateFinalPrize {
             align-self: center;
             width: 120px;
         }
-        #error{
+
+        #error {
             color: red;
         }
-        .ulform{
+
+        .ulform {
             display: flex;
             flex-direction: column;
         }
-        input{
-            
+
+        input {
+
             color: black;
             font-size: 20px;
         }
-        option{
+
+        option {
             color: black;
         }
-        
-        .formulario{
+
+        .formulario {
             top: 0px;
             letter-spacing: 3px;
             display: flex;
             flex-direction: row;
             width: 100%;
             height: 800px;
-           
+
             background-repeat: no-repeat;
             opacity: 80%;
             background-size: cover;
@@ -90,8 +102,8 @@
             justify-content: space-around;
         }
 
-        .aside{
-            
+        .aside {
+
             font-size: 20px;
             display: flex;
             justify-content: flex-start;
@@ -99,71 +111,80 @@
             align-items: center;
             height: 200px;
         }
-     #summary{
-        border: solid white 2px;
-            font-size: 30px;
-        border-radius: 10px;
-        width: 100%;
-        height: 400px;
-        background-color: rgb(105, 105, 105);
-        text-align: center; 
-        align-content: center;
-        line-height: 50px;
-        }
 
+        #summary {
+            border: solid white 2px;
+            font-size: 30px;
+            border-radius: 10px;
+            width: 100%;
+            height: 400px;
+            background-color: rgb(105, 105, 105);
+            text-align: center;
+            align-content: center;
+            line-height: 50px;
+        }
     </style>
 </head>
 
 
 <body>
-      <header>
-    <nav class="navbg navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <h1 class="navbar-brand">The Bauhaus Museum</h1>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="homemenu nav-link active" aria-current="page" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="exhibitionmenu nav-link" href="exhibition.html">Exhibition</a>
-            </li>
-            <li id="ticketLi"><a id="ticket" href="tickets.html">Get your ticket!</a></li>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="buscador form-control me-2" type="search" placeholder="Escribe aqui" aria-label="Search" />
-            <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-  </header><br>
+    <header>
+        <nav class="navbg navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">The Bauhaus Museum</h1>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="homemenu nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="exhibitionmenu nav-link" href="exhibition.html">Exhibition</a>
+                        </li>
+                        <li id="ticketLi"><a id="ticket" href="tickets.html">Get your ticket!</a></li>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="buscador form-control me-2" type="search" placeholder="Escribe aqui"
+                            aria-label="Search" />
+                        <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header><br>
 
-<div class="formulario">
-   
+    <div class="formulario">
+
         <form id="form">
             <h1>Ticket purchase</h1>
             <ul class="ulform">
                 <li>
-                    <label for="fname">Full Name:</label>
-                    <input type="text" id="fname">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Full Name</span>
+                        <input id="fname" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
                 </li><br>
 
                 <li>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email">
+                    <div class="input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Email</span>
+                        <input id="email" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
                 </li><br>
 
                 <li>
-                    <label for="visit">Visit day:</label>
-                    <input type="date" id="visit">
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Select the date:</label>
+                        <input type="date" class="form-control" id="visit" name="fecha">
+                    </div>
                 </li><br>
 
                 <li>
                     Select the time slot you prefer:
-                    <select id="select" style="color: black;">
-                        <option value="" selected>Select slot</option>
+                    <select id="select" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                        <option value="" selected>Select time slot</option>
                         <option value="9:00">9:00-10:30</option>
                         <option value="10:30">10:30-12:00</option>
                         <option value="12:00">12:00-13:30</option>
@@ -173,6 +194,7 @@
                         <option value="18:00">18:00-19:30</option>
                         <option value="19:30">19:30-21:00</option>
                     </select>
+
                 </li><br>
 
                 <li>Select the ticket type you want to buy:</li>
@@ -188,7 +210,7 @@
                 </li><br>
 
                 <li>
-                    Would you like a guided visit? 
+                    Would you like a guided visit?
                     <input type="checkbox" id="checkbox">
                 </li><br>
 
@@ -201,78 +223,87 @@
                 <input type="button" id="calculateFinalPrize" value="Calculate">
             </ul>
 
-            </form>
-            <div class="aside">
+        </form>
+        <div class="aside">
             <p id="error"></p>
             <p id="summary"></p>
-            </div>
-</div>
+        </div>
+    </div>
 
 
-<footer>
-        
-        <div class="img">
-            <h2>You can also find us right here!</h2>
-          <ul>
+    <footer>
+        <h2>You can also find us right here!</h2>
+        <ul>
             <li>Youtube</li>
             <li>Instagram</li>
             <li>Tumblr</li>
             <li>Twitter</li>
-          </ul>
-          </div>
-      </footer> 
-        <script>
+        </ul>
+    </footer>
+    <style>
+        footer {
+            border-top: 6px solid black;
+            font-size: 20px;
+            text-align: center;
+            background-color: rgba(0, 0, 0, 0.409);
+            padding: 10px;
+        }
+    </style>
+    <script>
 
-    document.getElementById("calculateFinalPrize").addEventListener("click", function() {
-      
-    const name = document.getElementById("fname").value.trim();
-    const email = document.getElementById("email").value.trim();
-    const visit = document.getElementById("visit").value;
-    const tslot = document.getElementById("select").value;
-    const quantity = parseInt(document.getElementById("quantity").value);
-    const guided = document.getElementById("checkbox").checked;
-    const discount = document.getElementById("discount").value.trim();
-    const type = document.querySelector("input[name='ticketType']:checked");
+        document.getElementById("calculateFinalPrize").addEventListener("click", function () {
 
-    const error = document.getElementById("error");
-    const summary = document.getElementById("summary");
-    error.textContent = "";
-    summary.textContent = "";
+            const name = document.getElementById("fname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const visit = document.getElementById("visit").value;
+            const tslot = document.getElementById("select").value;
+            const quantity = parseInt(document.getElementById("quantity").value);
+            const guided = document.getElementById("checkbox").checked;
+            const discount = document.getElementById("discount").value.trim();
+            const type = document.querySelector("input[name='ticketType']:checked");
 
-    if(!name || !email || !visit || !tslot || !quantity || !type){
-        error.textContent = "You must complete all mandatory fields.";
-        return;
-    }
+            const error = document.getElementById("error");
+            const summary = document.getElementById("summary");
+            error.textContent = "";
+            summary.textContent = "";
 
-    let price = 0;
-    if(type.value === "adult"){
-         price = 12;
-    }
-    if(type.value === "student"){
-        price = 8;
-    }
-    if(type.value === "child"){ 
-        price = 5;
-    }
+            if (!name || !email || !visit || !tslot || !quantity || !type) {
+                error.textContent = "You must complete all mandatory fields.";
+                return;
+            }
 
-    let total = price * quantity;
+            let price = 0;
+            if (type.value === "adult") {
+                price = 12;
+            }
+            if (type.value === "student") {
+                price = 8;
+            }
+            if (type.value === "child") {
+                price = 5;
+            }
 
-    if(guided){ 
-        total += 5;
-    }
-    if(discount === "MUSEUM10"){
-        total *= 0.9;
-    }
-    summary.innerHTML = `
+            let total = price * quantity;
+
+            if (guided) {
+                total += 5;
+            }
+            if (discount === "MUSEUM10") {
+                total *= 0.9;
+            }
+            summary.innerHTML = `
         <strong>Summary:</strong><br>
         Name: ${name}<br>
+        Email: ${email}<br>
         Tickets: ${quantity} (${type.value})<br>
-        Slot: ${tslot}<br>
+        Date: ${visit}<br>
+        Time slot: ${tslot}<br>
         Guided visit: ${guided ? "Yes" : "No"}<br>
         Total price: ${total.toFixed(2)}€
     `;
-});
+        });
 
-</script>
+    </script>
 </body>
+
 </html>

@@ -267,7 +267,7 @@ th {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    margin: 20px;
+    margin-top:95px;
     padding: 30px 20px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
