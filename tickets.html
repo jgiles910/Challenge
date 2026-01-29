@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tickets</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <!-- //BOOTSTRAP -->
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
+    <style>
+        #form {
+
+            font-size: 30px;
+            padding: 70px;
+            border-radius: 10px;
+            background-color: rgb(99, 99, 99);
+            font-family: 'Courier New', Courier, monospace;
+            border: rgb(255, 255, 255) solid 3px;
+        }
+
+        #calculateFinalPrize {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #visit {
+            font-size: 20px;
+        }
+
+        form>h1 {
+            position: relative;
+            left: 5%;
+            font-weight: 200;
+            letter-spacing: 20px;
+            padding: 20px 10px 20px 10px;
+            color: rgb(239, 239, 239);
+            font-size: 30px;
+            width: 90%;
+            text-align: center;
+            background-color: rgb(136, 136, 136);
+            border-radius: 0px 0px 10px 10px;
+            border-top: 1px solid rgb(255, 255, 255);
+        }
+
+        select {
+            font-size: 20px;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        #calculateFinalPrize {
+            align-self: center;
+            width: 120px;
+        }
+
+        #error {
+            color: red;
+        }
+
+        .ulform {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+
+            color: black;
+            font-size: 20px;
+        }
+
+        option {
+            color: black;
+        }
+
+        .aside {
+            margin: 50px;
+            font-size: 20px;
+            display: flex;
+            justify-content: flex-start;
+            width: 40%;
+            align-items: center;
+            height: 200px;
+        }
+
+        #summary {
+            border: solid white 2px;
+            font-size: 30px;
+            border-radius: 10px;
+            width: 100%;
+            height: 570px;
+            background-color: rgb(105, 105, 105);
+            text-align: center;
+            align-content: center;
+            line-height: 50px;
+            padding: 50px;
+        }
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbg navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <h1 class="navbar-brand">The Bauhaus Museum</h1>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="homemenu nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="exhibitionmenu nav-link" href="exhibition.html">Exhibition</a>
+                        </li>
+                        <li id="ticketLi"><a id="ticket" href="tickets.html">Get your ticket!</a></li>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input class="buscador form-control me-2" type="search" placeholder="Escribe aqui"
+                            aria-label="Search" />
+                        <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                    </form>
+                </div>
+            </div>
+        </nav>
+    </header><br>
+
+    <div class="formulario">
+
+        <form id="form">
+            <h1>Ticket purchase</h1>
+            <ul class="ulform">
+                <li>
+                    <div class="fullname input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Full Name</span>
+                        <input id="fname" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                </li><br>
+
+                <li>
+                    <div class="email input-group input-group-lg">
+                        <span class="input-group-text" id="inputGroup-sizing-lg">Email</span>
+                        <input id="email" type="text" class="form-control" aria-label="Sizing example input"
+                            aria-describedby="inputGroup-sizing-lg">
+                    </div>
+                </li><br>
+
+                <li>
+                    <div class="mb-3">
+                        <label for="fecha" class="form-label">Select the date:</label>
+                        <input type="date" class="form-control" id="visit" name="fecha">
+                    </div>
+                </li><br>
+
+                <li>
+                    Select the time slot you prefer:
+                    <select id="select" class="form-select form-select-lg mb-3" aria-label="Large select example">
+                        <option value="" selected>Select time slot</option>
+                        <option value="9:00">9:00-10:30</option>
+                        <option value="10:30">10:30-12:00</option>
+                        <option value="12:00">12:00-13:30</option>
+                        <option value="13:30">13:30-15:00</option>
+                        <option value="15:00">15:00-16:30</option>
+                        <option value="16:30">16:30-18:00</option>
+                        <option value="18:00">18:00-19:30</option>
+                        <option value="19:30">19:30-21:00</option>
+                    </select>
+
+                </li><br>
+
+                <li>Select the ticket type you want to buy:</li>
+                <ul class="ulform">
+
+                    <li>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Adult (12€) </label>
+                            <input name="ticketType" value="adult" class="A form-check-input" type="radio"
+                                id="flexSwitchCheckDefault">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Student (8€) </label>
+                            <input name="ticketType" value="student" class="S form-check-input" type="radio"
+                                id="flexSwitchCheckDefault">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Child (5€) </label>
+                            <input name="ticketType" value="child" class="C form-check-input" type="radio"
+                                id="flexSwitchCheckDefault">
+                        </div>
+                    </li>
+                </ul><br>
+
+                <li class="quantityText">
+                    <label for="quantity">Select the ticket quantity you want:</label>
+                    <input id="quantity" min="1" type="range" class="form-range" max="10" id="customRange2">
+                    <div class="rangeNums"><label for="customRange2" class="form-label">1</label>
+                        <label for="customRange2" class="form-label">2</label>
+                        <label for="customRange2" class="form-label">3</label>
+                        <label for="customRange2" class="form-label">4</label>
+                        <label for="customRange2" class="form-label">5</label>
+                        <label for="customRange2" class="form-label">6</label>
+                        <label for="customRange2" class="form-label">7</label>
+                        <label for="customRange2" class="form-label">8</label>
+                        <label for="customRange2" class="form-label">9</label>
+                        <label for="customRange2" class="form-label">10</label>
+                    </div>
+
+                </li><br>
+
+                <li class="visitText">
+                    <div class="guidedSwitch form-check form-switch">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Would you like a guided visit?
+                        </label>
+                        <input name="guidedvisit" value="adult" class="A form-check-input" type="checkbox" id="guided">
+                    </div>
+                </li>
+
+                <li>
+                    <label for="discount">Discount code:</label>
+                    <input type="text" id="discount" placeholder="MUSEUM10">
+                </li>
+
+                <br>
+                <div class="divBotonCalcular"><input class="botonCalcular" type="button" id="calculateFinalPrize"
+                        value="Calculate"></div>
+
+            </ul>
+
+        </form>
+        <div class="aside">
+            <p id="error"></p>
+            <p id="summary" style="display: none;"></p>
+        </div>
+    </div>
+
+
+ <footer class="footer ">
+
+    <div class="container-fluid p-5 ">
+      <!--- crea una fila horizontal-->
+      <div class="row text-center text-md-start">
+        <!-- en pantallas medianas (md) este bloque ocupara 3 de 12 columnas (col-md-3)-->
+        <div class="col-12 col-md-3 mx-auto mb-4" >
+          <h3> Información Corporativa y Legal</h3>
+          <hr>
+
+          <a href="" class="d-block ">Sobre Nosotros</a>
+            
+          <a href="" class="d-block ">Politica de cookies</a>
+          <a href="" class=" d-block ">Términos y condiciones</a>
+          <a href="" class="d-block ">Politica de privacidad</a>
+          <a href="" class="d-block ">Opiniones de nuestroas clientes</a>
+        </div>
+
+        <div class="col-12 col-md-3 mx-auto mb-4" >
+          <h3>La Bauhaus</h3>
+          <hr>
+          <a href="" class="d-block ">Historia de la Bauhaus</a>
+          <a href="" class="d-block ">Artistas Clave</a>
+          <a href="" class="d-block ">Principios de Diseño</a>
+          <a href="" class="d-block ">Archivo Digital</a>
+        </div>
+        <div class="col-12 col-md-3 mx-auto mb-4" >
+          <h3>El Museo</h3>
+          <hr>
+          <a href="" class="d-block ">Planifica tu Visita</a>
+          <a href="" class="d-block ">Exposiciones Actuales</a>
+          <a href="" class="d-block ">Exposiciones Permanentes</a>
+          <a href="" class="d-block ">Contacto y Ubicación</a>
+        </div>
+      </div>
+    </div>
+
+  </footer>
+       
+
+    <script>
+
+        document.getElementById("calculateFinalPrize").addEventListener("click", function () {
+
+            const name = document.getElementById("fname").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const visit = document.getElementById("visit").value;
+            const tslot = document.getElementById("select").value;
+            const quantity = parseInt(document.getElementById("quantity").value);
+            const guided = document.getElementById("guided").checked;
+            const discount = document.getElementById("discount").value.trim();
+            const type = document.querySelector("input[name='ticketType']:checked");
+
+            const error = document.getElementById("error");
+            const summary = document.getElementById("summary");
+            error.textContent = "";
+            summary.textContent = "";
+
+            if (!name || !email || !visit || !tslot || !quantity || !type) {
+                error.textContent = "You must complete all mandatory fields.";
+                return;
+            }
+
+            let price = 0;
+            if (type.value === "adult") {
+                price = 12;
+            }
+            if (type.value === "student") {
+                price = 8;
+            }
+            if (type.value === "child") {
+                price = 5;
+            }
+
+            let total = price * quantity;
+
+            if (guided) {
+                total += 5;
+            }
+            if (discount === "MUSEUM10") {
+                total *= 0.9;
+            }
+            summary.innerHTML = `
+        <strong style="font-size: 1.5em; display:"block";">Summary:</strong><br><br>
+        Name: ${name}<br>
+        Email: ${email}<br>
+        Tickets: ${quantity} (${type.value})<br>
+        Date: ${visit}<br>
+        Time slot: ${tslot}<br>
+        Guided visit: ${guided ? "Yes" : "No"}<br>
+        Total price: ${total.toFixed(2)}€
+    `;
+            document.getElementById("summary").style.display = "block";
+        });
+
+    </script>
+
+</body>
+
+</html>

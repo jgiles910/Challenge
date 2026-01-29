@@ -121,12 +121,17 @@ header {
 
 /* Texto THe Rothko Museum */
 .navbar-brand {
+.navbar-brand {
     display: flex;
     position: relative;
     left: 4vw;
     top: 2.2vh;
     color: white;
     font-size: 3em;
+}
+
+header {
+    height: 100px;
 }
 
 header {
