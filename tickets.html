@@ -19,10 +19,6 @@
         rel="stylesheet">
 
     <style>
-        /* 
-        *{
-            color: rgb(255, 253, 253);
-        } */
         #form {
 
             font-size: 30px;
@@ -43,13 +39,16 @@
         }
 
         form>h1 {
+            position: relative;
+            left: 5%;
             font-weight: 200;
             letter-spacing: 20px;
             padding: 20px 10px 20px 10px;
             color: rgb(239, 239, 239);
             font-size: 30px;
+            width: 90%;
             text-align: center;
-            background-color: rgb(105, 105, 105);
+            background-color: rgb(136, 136, 136);
             border-radius: 0px 0px 10px 10px;
             border-top: 1px solid rgb(255, 255, 255);
         }
@@ -87,23 +86,8 @@
             color: black;
         }
 
-        .formulario {
-            top: 0px;
-            letter-spacing: 3px;
-            display: flex;
-            flex-direction: row;
-            width: 100%;
-            height: 800px;
-
-            background-repeat: no-repeat;
-            opacity: 80%;
-            background-size: cover;
-            align-items: center;
-            justify-content: space-around;
-        }
-
         .aside {
-
+            margin: 50px;
             font-size: 20px;
             display: flex;
             justify-content: flex-start;
@@ -117,11 +101,12 @@
             font-size: 30px;
             border-radius: 10px;
             width: 100%;
-            height: 400px;
+            height: 570px;
             background-color: rgb(105, 105, 105);
             text-align: center;
             align-content: center;
             line-height: 50px;
+            padding: 50px;
         }
     </style>
 </head>
@@ -159,7 +144,7 @@
             <h1>Ticket purchase</h1>
             <ul class="ulform">
                 <li>
-                    <div class="input-group input-group-lg">
+                    <div class="fullname input-group input-group-lg">
                         <span class="input-group-text" id="inputGroup-sizing-lg">Full Name</span>
                         <input id="fname" type="text" class="form-control" aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-lg">
@@ -167,7 +152,7 @@
                 </li><br>
 
                 <li>
-                    <div class="input-group input-group-lg">
+                    <div class="email input-group input-group-lg">
                         <span class="input-group-text" id="inputGroup-sizing-lg">Email</span>
                         <input id="email" type="text" class="form-control" aria-label="Sizing example input"
                             aria-describedby="inputGroup-sizing-lg">
@@ -199,34 +184,70 @@
 
                 <li>Select the ticket type you want to buy:</li>
                 <ul class="ulform">
-                    <li>Adult (12€) <input type="radio" name="ticketType" value="adult"></li>
-                    <li>Student (8€) <input type="radio" name="ticketType" value="student"></li>
-                    <li>Child (5€) <input type="radio" name="ticketType" value="child"></li>
+
+                    <li>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Adult (12€) </label>
+                            <input name="ticketType" value="adult" class="A form-check-input" type="radio"
+                                id="flexSwitchCheckDefault">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Student (8€) </label>
+                            <input name="ticketType" value="student" class="S form-check-input" type="radio"
+                                id="flexSwitchCheckDefault">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="form-check form-switch">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">Child (5€) </label>
+                            <input name="ticketType" value="child" class="C form-check-input" type="radio"
+                                id="flexSwitchCheckDefault">
+                        </div>
+                    </li>
                 </ul><br>
 
-                <li>
-                    <label for="quantity">Enter the ticket quantity you want:</label>
-                    <input type="number" id="quantity" min="1">
+                <li class="quantityText">
+                    <label for="quantity">Select the ticket quantity you want:</label>
+                    <input id="quantity" min="1" type="range" class="form-range" max="10" id="customRange2">
+                    <div class="rangeNums"><label for="customRange2" class="form-label">1</label>
+                        <label for="customRange2" class="form-label">2</label>
+                        <label for="customRange2" class="form-label">3</label>
+                        <label for="customRange2" class="form-label">4</label>
+                        <label for="customRange2" class="form-label">5</label>
+                        <label for="customRange2" class="form-label">6</label>
+                        <label for="customRange2" class="form-label">7</label>
+                        <label for="customRange2" class="form-label">8</label>
+                        <label for="customRange2" class="form-label">9</label>
+                        <label for="customRange2" class="form-label">10</label>
+                    </div>
+
                 </li><br>
 
-                <li>
-                    Would you like a guided visit?
-                    <input type="checkbox" id="checkbox">
-                </li><br>
+                <li class="visitText">
+                    <div class="guidedSwitch form-check form-switch">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">Would you like a guided visit?
+                        </label>
+                        <input name="guidedvisit" value="adult" class="A form-check-input" type="checkbox" id="guided">
+                    </div>
+                </li>
 
                 <li>
                     <label for="discount">Discount code:</label>
-                    <input type="text" id="discount">
+                    <input type="text" id="discount" placeholder="MUSEUM10">
                 </li>
 
                 <br>
-                <input type="button" id="calculateFinalPrize" value="Calculate">
+                <div class="divBotonCalcular"><input class="botonCalcular" type="button" id="calculateFinalPrize"
+                        value="Calculate"></div>
+
             </ul>
 
         </form>
         <div class="aside">
             <p id="error"></p>
-            <p id="summary"></p>
+            <p id="summary" style="display: none;"></p>
         </div>
     </div>
 
@@ -234,21 +255,13 @@
     <footer>
         <h2>You can also find us right here!</h2>
         <ul>
-            <li>Youtube</li>
-            <li>Instagram</li>
-            <li>Tumblr</li>
-            <li>Twitter</li>
+            <li><a href="https://www.youtube.com/" target="_blank">Youtube</a></li>
+            <li><a href="https://www.instagram.com/" target="_blank">Instagram</a></li>
+            <li><a href="https://www.tumblr.com/" target="_blank">Tumblr</a></li>
+            <li><a href="https://x.com/?lang=es" target="_blank">Twitter</a></li>
         </ul>
     </footer>
-    <style>
-        footer {
-            border-top: 6px solid black;
-            font-size: 20px;
-            text-align: center;
-            background-color: rgba(0, 0, 0, 0.409);
-            padding: 10px;
-        }
-    </style>
+
     <script>
 
         document.getElementById("calculateFinalPrize").addEventListener("click", function () {
@@ -258,7 +271,7 @@
             const visit = document.getElementById("visit").value;
             const tslot = document.getElementById("select").value;
             const quantity = parseInt(document.getElementById("quantity").value);
-            const guided = document.getElementById("checkbox").checked;
+            const guided = document.getElementById("guided").checked;
             const discount = document.getElementById("discount").value.trim();
             const type = document.querySelector("input[name='ticketType']:checked");
 
@@ -292,7 +305,7 @@
                 total *= 0.9;
             }
             summary.innerHTML = `
-        <strong>Summary:</strong><br>
+        <strong style="font-size: 1.5em; display:"block";">Summary:</strong><br><br>
         Name: ${name}<br>
         Email: ${email}<br>
         Tickets: ${quantity} (${type.value})<br>
@@ -301,6 +314,7 @@
         Guided visit: ${guided ? "Yes" : "No"}<br>
         Total price: ${total.toFixed(2)}€
     `;
+            document.getElementById("summary").style.display = "block";
         });
 
     </script>

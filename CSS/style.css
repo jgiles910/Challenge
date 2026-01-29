@@ -15,6 +15,7 @@ body {
 
 main {
     margin-top: 90px;
+    display: ;
 }
 
 .homemenu {
@@ -55,7 +56,7 @@ header {
 }
 
 /* lista del menu */
-.navbar-nav{
+.navbar-nav {
     display: flex;
     position: relative;
     right: 20vw;
@@ -63,11 +64,11 @@ header {
 }
 
 /* boton de busqueda */
-.buscador{
+.buscador {
     background-color: #f2f2f2;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     position: relative;
     width: 16vw;
@@ -76,15 +77,15 @@ header {
 }
 
 /* boton de tickets */
-#ticketLi{
+#ticketLi {
     display: block;
     position: relative;
     top: 3vh;
-    scale:1.2;
+    scale: 1.2;
 }
 
 /* Texto THe Rothko Museum */
-.navbar-brand{
+.navbar-brand {
     display: flex;
     position: relative;
     left: 4vw;
@@ -93,12 +94,16 @@ header {
     font-size: 3em;
 }
 
+header {
+    height: 100px;
+}
+
 .navbg {
     background-color: rgb(58, 68, 41);
     width: 100%;
     margin: 0px;
     background-size: cover;
-    height: 100%;
+    height: 101%;
 }
 
 ul {
@@ -267,7 +272,7 @@ th {
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    margin-top:95px;
+    margin-top: 95px;
     padding: 30px 20px;
     background-color: rgba(0, 0, 0, 0.4);
     border-radius: 10px;
@@ -320,6 +325,97 @@ th {
     font-size: 16px;
     margin-bottom: 4px;
     color: rgba(255, 255, 255, 0.85);
+}
+
+/* --- Tickets CSS --- */
+
+.formulario {
+    margin-top: -140px;
+    top: 0px;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    scale: 0.7;
+}
+
+.fullname {
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-bottom: 20px;
+}
+
+.A,
+.S,
+.C {
+    position: relative;
+    top: 5px;
+    margin-right: 50px;
+    scale: 1.6;
+}
+
+.quantityText {
+    margin-top: 20px;
+}
+
+.visitText {
+    margin-top: 20px;
+}
+
+.rangeNums {
+    width: 120%;
+    margin-left: -32px;
+}
+
+.rangeNums label {
+    margin-left: 40px;
+}
+
+.guidedSwitch {
+    margin: 10px 10px 30px 20px;
+}
+
+.divBotonCalcular {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.botonCalcular {
+
+    scale: 1.5;
+}
+
+/* --- FOOTER --- */
+
+footer {
+    border-top: 6px solid black;
+    font-size: 20px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.409);
+    padding: 10px;
+}
+
+footer h2 {
+    font-size: 25px;
+    margin-top: 20px;
+}
+
+footer ul {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+footer a {
+    color: white;
 }
 
 /*--- Todo lo de bauhaus aqui ---*/
