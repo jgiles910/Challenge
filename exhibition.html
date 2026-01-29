@@ -78,237 +78,264 @@
 
 
   <section class="bauhausPaintings">
-    <style>
-      .bauhausPaintings{
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-      .bauhausPaintings>div{
-        border: solid black 10px;
-        width: 30%;
-        height: 590px;
-        background-color: rgb(207, 207, 207);
-        padding: 60px;
-      }
-    </style>
-  <div class="firstBauhaus">
 
-    <style>
-      .firstBauhaus>div>span {
-        color: black;
-        font-size: 30px;
-      }
-      .firstBauhaus>div {
-        border: solid black 3px;
-      }
-      .firstBauhaus {
-        border: solid rgb(0, 0, 0) 30px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0px;
-        grid-auto-rows: minmax(100px, auto);
-        
-      }
-      .firstBauhaus>.one {
-        border-right: none;
-        background-color: rgb(184, 184, 184);
-        grid-column: 1;
-        grid-row: 1/4;
-        z-index: 1;
-      }
-      .firstBauhaus>.two {
-        background-color: rgb(190, 190, 190);
-        grid-column: 1/5;
-        grid-row: 3;
-      }
-      .firstBauhaus>.three {
-        border-right: none;
-        background-color: #ff9b1a;
-        grid-column: 2/5;
-        grid-row: 1;
-      }
-      .firstBauhaus>.four {
-        border-left: none;
-        background-color: #ff9b1a;
-        grid-column: 4/5;
-        grid-row: 1/6;
-      }
-      .firstBauhaus>.five {
-        background-color: rgb(253, 253, 253);
-        grid-column: 2;
-        grid-row: 1/5;
-        z-index: 2;
-      }
-      .firstBauhaus>.six {
-        border-left: solid 3px black;
-        border-top: none;
-        z-index: 2;
-        background-color: #ff9b1a;
-        grid-column: 4/5;
-        grid-row: 2/5;
-      }
-      .firstBauhaus>.seven {
-        border-left: none;
-        background-color: rgb(255, 255, 255);
-        grid-column: 4;
-        grid-row: 4;
-        z-index: 4;
-      }
-      .firstBauhaus>.eight {
-        background-color: #ff9b1a;
-        grid-column: 3/5;
-        grid-row: 5;
-      }
-      .firstBauhaus>.nine {
-        background-color: rgb(184, 184, 184);
-        grid-column: 1/4;
-        grid-row: 5;
-      }
-      .firstBauhaus>.ten {
-        border-top: solid white 0px;
-        background-color: rgb(255, 255, 255);
-        grid-column: 2/5;
-        z-index: 3;
-        grid-row: 4/5;
-      }
-    </style>
-    <div class="one"><span></span></div>
-    <div class="two"><span></span></div>
-    <div class="three"> <span></span></div>
-    <div class="four"><span></span></div>
-    <div class="five"><span></span></div>
-    <div class="six"> <span></span></div>
-    <div class="seven"> <span></span></div>
-    <div class="eight"><span></span></div>
-    <div class="nine"><span></span></div>
-    <div class="ten"> <span></span></div>
+    <div class="firstBauhaus">
 
-  </div>
+      <style>
+        .firstBauhaus>div>span {
+          color: black;
+          font-size: 30px;
+        }
 
-  <div class="secondBauhaus">
+        .firstBauhaus>div {
+          border: solid black 3px;
+        }
 
-    <div class="one"></div>
-    <div class="two"></div>
-    <div class="three"></div>
-    <div class="four"></div>
-    <div class="five"></div>
-    <div class="six"></div>
-    <div class="seven"></div>
+        .firstBauhaus {
+          border: solid rgb(0, 0, 0) 30px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 0px;
+          grid-auto-rows: minmax(100px, auto);
 
-  </div>
+        }
 
-  <div class="thirdBauhaus">
+        .firstBauhaus>.one {
+          border-right: none;
+          background-color: rgb(184, 184, 184);
+          grid-column: 1;
+          grid-row: 1/4;
+          z-index: 1;
+        }
 
-    <style>
-      .thirdBauhaus>div>span {
-        color: black;
-        font-size: 30px;
-      }
-      .thirdBauhaus>div {
-        border: solid black 3px;
-      }
-      .thirdBauhaus {
-        border: solid rgb(0, 0, 0) 30px;
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        grid-gap: 0px;
-        grid-auto-rows: minmax(100px, auto);
-        background-color: rgb(86, 86, 86);
-      }
+        .firstBauhaus>.two {
+          background-color: rgb(190, 190, 190);
+          grid-column: 1/5;
+          grid-row: 3;
+        }
 
-      .thirdBauhaus>.one {
-        background-color: rgb(255, 27, 27);
-        grid-column: 1/3;
-        grid-row: 1/3;
+        .firstBauhaus>.three {
+          border-right: none;
+          background-color: #ff9b1a;
+          grid-column: 2/5;
+          grid-row: 1;
+        }
 
-      }
-      .thirdBauhaus>.two {
-        background-color: rgb(255, 255, 255);
-        grid-column: 3/5;
-        grid-row: 1/3;
-      }
-      .thirdBauhaus>.three {
+        .firstBauhaus>.four {
+          border-left: none;
+          background-color: #ff9b1a;
+          grid-column: 4/5;
+          grid-row: 1/6;
+        }
 
-        background-color: #ffffff;
-        grid-column: 1/3;
-        grid-row: 3;
-      }
-      .thirdBauhaus>.four {
+        .firstBauhaus>.five {
+          background-color: rgb(253, 253, 253);
+          grid-column: 2;
+          grid-row: 1/5;
+          z-index: 2;
+        }
 
-        background-color: #ffffff;
-        grid-column: 3/5;
-        grid-row: 3;
-      }
-      .thirdBauhaus>.five {
-        width: 63%;
-        background-color: rgb(255, 234, 0);
-        grid-column: 1;
-        grid-row: 4;
-        z-index: 1;
-      }
-      .thirdBauhaus>.six {
-        height: 150px;
-        background-color: #ffffff;
-        grid-column: 1/3;
-        grid-row: 4;
-      }
-      .thirdBauhaus>.seven {
-        width: 200px;
+        .firstBauhaus>.six {
+          border-left: solid 3px black;
+          border-top: none;
+          z-index: 2;
+          background-color: #ff9b1a;
+          grid-column: 4/5;
+          grid-row: 2/5;
+        }
 
-        background-color: rgb(252, 252, 252);
-        grid-column: 3;
-        grid-row: 4;
+        .firstBauhaus>.seven {
+          border-left: none;
+          background-color: rgb(255, 255, 255);
+          grid-column: 4;
+          grid-row: 4;
+          z-index: 4;
+        }
 
-      }
-      .thirdBauhaus>.eight {
+        .firstBauhaus>.eight {
+          background-color: #ff9b1a;
+          grid-column: 3/5;
+          grid-row: 5;
+        }
 
-        background-color: #ffffff;
-        grid-column: 4/5;
-        grid-row: 4;
-      }
-      .thirdBauhaus>.nine {
-        background-color: rgb(16, 115, 191);
-        grid-column: 3;
-        grid-row: 4;
-        z-index: 1;
-        height: 80%;
-      }
-    </style>
+        .firstBauhaus>.nine {
+          background-color: rgb(184, 184, 184);
+          grid-column: 1/4;
+          grid-row: 5;
+        }
 
-    <div class="one"><span></span></div>
-    <div class="two"><span></span></div>
-    <div class="three"> <span></span></div>
-    <div class="four"><span></span></div>
-    <div class="five"><span></span></div>
-    <div class="six"> <span></span></div>
-    <div class="seven"> <span></span></div>
-    <div class="eight"><span></span></div>
-    <div class="nine"><span></span></div>
+        .firstBauhaus>.ten {
+          border-top: solid white 0px;
+          background-color: rgb(255, 255, 255);
+          grid-column: 2/5;
+          z-index: 3;
+          grid-row: 4/5;
+        }
+      </style>
+      <div class="one"><span></span></div>
+      <div class="two"><span></span></div>
+      <div class="three"> <span></span></div>
+      <div class="four"><span></span></div>
+      <div class="five"><span></span></div>
+      <div class="six"> <span></span></div>
+      <div class="seven"> <span></span></div>
+      <div class="eight"><span></span></div>
+      <div class="nine"><span></span></div>
+      <div class="ten"> <span></span></div>
 
-  </div>
-</section>
-  <footer>
-    <h2>You can also find us right here!</h2>
-    <ul>
-      <li>Youtube</li>
-      <li>Instagram</li>
-      <li>Tumblr</li>
-      <li>Twitter</li>
-    </ul>
+    </div>
+
+    <div class="secondBauhaus">
+
+      <div class="one"></div>
+      <div class="two"></div>
+      <div class="three"></div>
+      <div class="four"></div>
+      <div class="five"></div>
+      <div class="six"></div>
+      <div class="seven"></div>
+
+    </div>
+
+    <div class="thirdBauhaus">
+
+      <style>
+        .thirdBauhaus>div>span {
+          color: black;
+          font-size: 30px;
+        }
+
+        .thirdBauhaus>div {
+          border: solid black 3px;
+        }
+
+        .thirdBauhaus {
+          border: solid rgb(0, 0, 0) 30px;
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          grid-gap: 0px;
+          grid-auto-rows: minmax(100px, auto);
+          background-color: rgb(86, 86, 86);
+        }
+
+        .thirdBauhaus>.one {
+          background-color: rgb(255, 27, 27);
+          grid-column: 1/3;
+          grid-row: 1/3;
+
+        }
+
+        .thirdBauhaus>.two {
+          background-color: rgb(255, 255, 255);
+          grid-column: 3/5;
+          grid-row: 1/3;
+        }
+
+        .thirdBauhaus>.three {
+
+          background-color: #ffffff;
+          grid-column: 1/3;
+          grid-row: 3;
+        }
+
+        .thirdBauhaus>.four {
+
+          background-color: #ffffff;
+          grid-column: 3/5;
+          grid-row: 3;
+        }
+
+        .thirdBauhaus>.five {
+          width: 63%;
+          background-color: rgb(255, 234, 0);
+          grid-column: 1;
+          grid-row: 4;
+          z-index: 1;
+        }
+
+        .thirdBauhaus>.six {
+          height: 150px;
+          background-color: #ffffff;
+          grid-column: 1/3;
+          grid-row: 4;
+        }
+
+        .thirdBauhaus>.seven {
+          width: 200px;
+
+          background-color: rgb(252, 252, 252);
+          grid-column: 3;
+          grid-row: 4;
+
+        }
+
+        .thirdBauhaus>.eight {
+
+          background-color: #ffffff;
+          grid-column: 4/5;
+          grid-row: 4;
+        }
+
+        .thirdBauhaus>.nine {
+          background-color: rgb(16, 115, 191);
+          grid-column: 3;
+          grid-row: 4;
+          z-index: 1;
+          height: 80%;
+        }
+      </style>
+
+      <div class="one"><span></span></div>
+      <div class="two"><span></span></div>
+      <div class="three"> <span></span></div>
+      <div class="four"><span></span></div>
+      <div class="five"><span></span></div>
+      <div class="six"> <span></span></div>
+      <div class="seven"> <span></span></div>
+      <div class="eight"><span></span></div>
+      <div class="nine"><span></span></div>
+
+    </div>
+  </section>
+  <footer class="footer ">
+
+    <div class="container-fluid p-5 ">
+      <!--- crea una fila horizontal-->
+      <div class="row text-center text-md-start">
+        <!-- en pantallas medianas (md) este bloque ocupara 3 de 12 columnas (col-md-3)-->
+        <div class="col-12 col-md-3 mx-auto mb-4" >
+          <h3> Información Corporativa y Legal</h3>
+          <hr>
+
+          <a href="" class="d-block ">Sobre Nosotros</a>
+            
+          <a href="" class="d-block ">Politica de cookies</a>
+          <a href="" class=" d-block ">Términos y condiciones</a>
+          <a href="" class="d-block ">Politica de privacidad</a>
+          <a href="" class="d-block ">Opiniones de nuestroas clientes</a>
+        </div>
+
+        <div class="col-12 col-md-3 mx-auto mb-4" >
+          <h3>La Bauhaus</h3>
+          <hr>
+          <a href="" class="d-block ">Historia de la Bauhaus</a>
+          <a href="" class="d-block ">Artistas Clave</a>
+          <a href="" class="d-block ">Principios de Diseño</a>
+          <a href="" class="d-block ">Archivo Digital</a>
+        </div>
+        <div class="col-12 col-md-3 mx-auto mb-4" >
+          <h3>El Museo</h3>
+          <hr>
+          <a href="" class="d-block ">Planifica tu Visita</a>
+          <a href="" class="d-block ">Exposiciones Actuales</a>
+          <a href="" class="d-block ">Exposiciones Permanentes</a>
+          <a href="" class="d-block ">Contacto y Ubicación</a>
+        </div>
+      </div>
+    </div>
+
   </footer>
-  <style>
-      footer{
-        border-top: 6px solid black;
-        font-size: 20px;
-        text-align: center;
-        background-color: rgba(0, 0, 0, 0.409);
-        padding: 10px;
-      }
-  </style>
+ 
 </body>
 
 </html>

@@ -55,7 +55,7 @@ header {
 }
 
 /* lista del menu */
-.navbar-nav{
+.navbar-nav {
     display: flex;
     position: relative;
     right: 20vw;
@@ -63,11 +63,11 @@ header {
 }
 
 /* boton de busqueda */
-.buscador{
+.buscador {
     background-color: #f2f2f2;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
     position: relative;
     width: 16vw;
@@ -76,15 +76,15 @@ header {
 }
 
 /* boton de tickets */
-#ticketLi{
+#ticketLi {
     display: block;
     position: relative;
     top: 3vh;
-    scale:1.2;
+    scale: 1.2;
 }
 
 /* Texto THe Rothko Museum */
-.navbar-brand{
+.navbar-brand {
     display: flex;
     position: relative;
     left: 4vw;
@@ -323,3 +323,72 @@ th {
 }
 
 /*--- Todo lo de bauhaus aqui ---*/
+
+.bauhausPaintings{
+        margin-bottom: 30px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around;
+      }
+      .bauhausPaintings>div{
+        border: solid black 10px;
+        width: 30%;
+        height: 590px;
+        background-color: rgb(207, 207, 207);
+        padding: 60px;
+      }
+
+
+
+/* Tablet */
+@media (max-width: 900px) {
+     .bauhausPaintings {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+    .bauhausPaintings>div{
+        width: 80%;
+        margin: 20px 20px 20px 20px;
+    }
+
+}
+
+/* mobile phone*/
+
+      
+
+@media (max-width: 758px) {
+
+    .collections>ul{
+        display: flex;
+        flex-direction: column;
+    }
+    .collections{
+        font-size: 20px;
+    }
+    .bauhausPaintings {
+        
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .bauhausPaintings>div{
+        width: 100%;
+        margin: 10px 0px 10px 0px;
+    }
+}
+
+/* Footer */
+
+footer{
+    border-top: white 3px solid;
+    background-color: #3a4429;
+}
