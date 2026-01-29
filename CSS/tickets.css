@@ -1,0 +1,163 @@
+/* --- Tickets CSS --- */
+
+.formulario {
+    margin-top: -140px;
+    top: 0px;
+    letter-spacing: 3px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-repeat: no-repeat;
+    opacity: 80%;
+    background-size: cover;
+    align-items: center;
+    justify-content: space-around;
+    scale: 0.7;
+}
+
+.fullname {
+    margin-bottom: 20px;
+}
+
+.email {
+    margin-bottom: 20px;
+}
+
+.A,
+.S,
+.C {
+    position: relative;
+    top: 5px;
+    margin-right: 50px;
+    scale: 1.6;
+}
+
+.quantityText {
+    margin-top: 20px;
+}
+
+.visitText {
+    margin-top: 20px;
+}
+
+.rangeNums {
+    width: 120%;
+    margin-left: -54px;
+}
+
+.rangeNums label {
+    margin-left: 55px;
+}
+
+.guidedSwitch {
+    margin: 10px 10px 30px 20px;
+}
+
+.divBotonCalcular {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+
+}
+
+.botonCalcular {
+
+    scale: 1.5;
+}
+
+
+
+/* --- extracted inline styles from tickets.html --- */
+#form {
+
+            font-size: 30px;
+            padding: 70px;
+            border-radius: 10px;
+            background-color: rgb(99, 99, 99);
+            font-family: 'Courier New', Courier, monospace;
+            border: rgb(255, 255, 255) solid 3px;
+        }
+
+        #calculateFinalPrize {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+
+        #visit {
+            font-size: 20px;
+        }
+
+        form>h1 {
+            position: relative;
+            left: 5%;
+            font-weight: 200;
+            letter-spacing: 20px;
+            padding: 20px 10px 20px 10px;
+            color: rgb(239, 239, 239);
+            font-size: 30px;
+            width: 90%;
+            text-align: center;
+            background-color: rgb(136, 136, 136);
+            border-radius: 0px 0px 10px 10px;
+            border-top: 1px solid rgb(255, 255, 255);
+        }
+
+        select {
+            font-size: 20px;
+        }
+
+        input {
+            padding: 5px;
+            border-radius: 7px;
+        }
+
+        #calculateFinalPrize {
+            align-self: center;
+            width: 120px;
+        }
+
+        #error {
+            color: red;
+        }
+
+        .ulform {
+            display: flex;
+            flex-direction: column;
+        }
+
+        input {
+
+            color: black;
+            font-size: 20px;
+        }
+
+        option {
+            color: black;
+        }
+
+        .aside {
+            margin: 50px;
+            font-size: 20px;
+            display: flex;
+            justify-content: flex-start;
+            width: 40%;
+            align-items: center;
+            height: 200px;
+        }
+
+        #summary {
+            border: solid white 2px;
+            font-size: 30px;
+            border-radius: 10px;
+            width: 100%;
+            height: 570px;
+            background-color: rgb(105, 105, 105);
+            text-align: center;
+            align-content: center;
+            line-height: 50px;
+            padding: 50px;
+        }
+
+#summary{
+    display: none;
+}
