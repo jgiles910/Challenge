@@ -1,369 +1,370 @@
 .collections {
-    background-image: url(../media/bg/espacio-de-galeria-con-focos-y-suelo-de-madera.webp);
-    background-size: cover;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    margin-top: 95px;
-    padding: 30px 20px;
-    background-color: rgba(0, 0, 0, 0.4);
-    border-radius: 10px;
-    color: #f2f2f2;
-    font-family: "Roboto Condensed", sans-serif;
+  background-image: url(../media/bg/espacio-de-galeria-con-focos-y-suelo-de-madera.webp);
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  margin-top: 45px;
+  padding: 30px 20px;
+  background-color: rgba(0, 0, 0, 0.4);
+  color: #f2f2f2;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 .collections h2 {
-    width: 100%;
-    text-align: center;
-    font-size: 26px;
-    margin-bottom: 20px;
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
-    padding-bottom: 8px;
+  width: 100%;
+  text-align: center;
+  font-size: 26px;
+  margin-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+  padding-bottom: 8px;
 }
 
 .collections-list {
 
-    list-style: none;
-    padding-left: 0;
-    margin: 0;
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .collections-list ul {
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
 }
 
 .collections-list>li {
-    font-size: 18px;
-    font-weight: 700;
-    margin-bottom: 12px;
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 12px;
 
 }
 
 .collections-list>li::before {
 
-    margin-right: 6px;
+  margin-right: 6px;
 }
 
 .collections-list li ul {
-    margin-top: 6px;
-    padding-left: 20px;
+  margin-top: 6px;
+  padding-left: 20px;
 
 }
 
 .collections-list li ul li {
-    font-weight: 400;
-    font-size: 16px;
-    margin-bottom: 4px;
-    color: rgba(255, 255, 255, 0.85);
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 4px;
+  color: rgba(255, 255, 255, 0.85);
 }
 
 
 /*--- Todo lo de bauhaus aqui ---*/
 
-.bauhausPaintings{
-        margin-bottom: 30px;
-        width: 100%;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-around;
-      }
-      .bauhausPaintings>div{
-        border: solid black 10px;
-        width: 30%;
-        height: 590px;
-        background-color: rgb(207, 207, 207);
-        padding: 60px;
-      }
+.bauhausPaintings {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.bauhausPaintings>div {
+  width: 600px;
+  border: solid black 10px;
+  height: 600px;
+  background-color: rgb(207, 207, 207);
+  padding: 60px;
+}
 
 
 
 /* Tablet */
 @media (max-width: 900px) {
-     .bauhausPaintings {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-around;
-        align-items: center;
-    }
+  .bauhausPaintings {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
 
-    .bauhausPaintings>div{
-        width: 80%;
-        margin: 20px 20px 20px 20px;
-    }
+  .bauhausPaintings>div {
+    width: 80%;
+    margin: 20px 20px 20px 20px;
+  }
 
 }
 
 /* mobile phone*/
-
-      
-
 @media (max-width: 758px) {
 
-    .collections>ul{
-        display: flex;
-        flex-direction: column;
-    }
-    .collections{
-        font-size: 20px;
-    }
-    .bauhausPaintings {
-        
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
+  .collections>ul {
+    display: flex;
+    flex-direction: column;
+  }
 
-    .bauhausPaintings>div{
-        width: 100%;
-        margin: 10px 0px 10px 0px;
-    }
+  .collections {
+    font-size: 20px;
+  }
+
+  .bauhausPaintings {
+
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .bauhausPaintings>div {
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+  }
 }
 
-/* Footer */
 
-
-/* --- bauhaus2.css (merged) --- */
-    .secondBauhaus {
-        display: grid;
-        grid-template-columns: 2fr 2fr 2fr 2fr;
-        grid-template-rows: 2fr 2fr 2fr 2fr;
-        width: 450px;
-        height: 350px;
-        padding-left: 20px;
-        gap: 5px;
-    }
-
-    .secondBauhaus div {
-
-        margin:-5px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        font-size: 25px;
-    }
-
-    .secondBauhaus .one {
-        background-color: rgb(231, 231, 231);
-        border-left: 5px rgb(28, 43, 43) solid;
-        border-top: 5px rgb(28, 43, 43) solid;
-    }
-
-    .secondBauhaus .two {
-        background-color: rgb(233, 18, 18);
-        border: 5px rgb(28, 43, 43) solid;
-        grid-column: 3 / span 1;
-        grid-row: 2/ span 4;
-    }
-
-    .secondBauhaus .three {
-        background-color: rgb(231, 231, 231);
-        border-top: 5px rgb(28, 43, 43) solid;
-        border-right: 5px rgb(28, 43, 43) solid;
-        border-bottom: 5px rgb(28, 43, 43) solid;
-    }
-
-    .secondBauhaus .four {
-        background-color: rgb(41, 117, 194);
-        border: 5px rgb(28, 43, 43) solid;
-    }
-
-
-    .secondBauhaus .five {
-        background-color: rgb(231, 231, 231);
-        border: 5px rgb(28, 43, 43) solid;
-    }
-
-    .secondBauhaus .six{
-        background-color: rgb(226, 226, 8);
-        border: 5px rgb(28, 43, 43) solid;
-        grid-column: 2 / span 1;
-        grid-row: 4 / span 2;
-    }
-
-    .secondBauhaus .seven{
-        background-color: rgb(231, 231, 231);
-        border-right: 5px rgb(28, 43, 43) solid;
-        border-left: 5px rgb(28, 43, 43) solid;
-        border-bottom: 5px rgb(28, 43, 43) solid;
-    }
-
-/* --- extracted inline styles from exhibition.html --- */
+/* FIRST BAUHAUS */
 .firstBauhaus>div>span {
-          color: black;
-          font-size: 30px;
-        }
+  color: black;
+  font-size: 30px;
+}
 
-        .firstBauhaus>div {
-          border: solid black 3px;
-        }
+.firstBauhaus>div {
+  border: solid black 3px;
+}
 
-        .firstBauhaus {
-          border: solid rgb(0, 0, 0) 30px;
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-gap: 0px;
-          grid-auto-rows: minmax(100px, auto);
+.firstBauhaus {
+  border: solid rgb(0, 0, 0) 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
 
-        }
+}
 
-        .firstBauhaus>.one {
-          border-right: none;
-          background-color: rgb(184, 184, 184);
-          grid-column: 1;
-          grid-row: 1/4;
-          z-index: 1;
-        }
+.firstBauhaus>.one {
+  border-right: none;
+  background-color: rgb(184, 184, 184);
+  grid-column: 1;
+  grid-row: 1/4;
+  z-index: 1;
+}
 
-        .firstBauhaus>.two {
-          background-color: rgb(190, 190, 190);
-          grid-column: 1/5;
-          grid-row: 3;
-        }
+.firstBauhaus>.two {
+  background-color: rgb(190, 190, 190);
+  grid-column: 1/5;
+  grid-row: 3;
+}
 
-        .firstBauhaus>.three {
-          border-right: none;
-          background-color: #ff9b1a;
-          grid-column: 2/5;
-          grid-row: 1;
-        }
+.firstBauhaus>.three {
+  border-right: none;
+  background-color: #ff9b1a;
+  grid-column: 2/5;
+  grid-row: 1;
+}
 
-        .firstBauhaus>.four {
-          border-left: none;
-          background-color: #ff9b1a;
-          grid-column: 4/5;
-          grid-row: 1/6;
-        }
+.firstBauhaus>.four {
+  border-left: none;
+  background-color: #ff9b1a;
+  grid-column: 4/5;
+  grid-row: 1/6;
+}
 
-        .firstBauhaus>.five {
-          background-color: rgb(253, 253, 253);
-          grid-column: 2;
-          grid-row: 1/5;
-          z-index: 2;
-        }
+.firstBauhaus>.five {
+  background-color: rgb(253, 253, 253);
+  grid-column: 2;
+  grid-row: 1/5;
+  z-index: 2;
+}
 
-        .firstBauhaus>.six {
-          border-left: solid 3px black;
-          border-top: none;
-          z-index: 2;
-          background-color: #ff9b1a;
-          grid-column: 4/5;
-          grid-row: 2/5;
-        }
+.firstBauhaus>.six {
+  border-left: solid 3px black;
+  border-top: none;
+  z-index: 2;
+  background-color: #ff9b1a;
+  grid-column: 4/5;
+  grid-row: 2/5;
+}
 
-        .firstBauhaus>.seven {
-          border-left: none;
-          background-color: rgb(255, 255, 255);
-          grid-column: 4;
-          grid-row: 4;
-          z-index: 4;
-        }
+.firstBauhaus>.seven {
+  border-left: none;
+  background-color: rgb(255, 255, 255);
+  grid-column: 4;
+  grid-row: 4;
+  z-index: 4;
+}
 
-        .firstBauhaus>.eight {
-          background-color: #ff9b1a;
-          grid-column: 3/5;
-          grid-row: 5;
-        }
+.firstBauhaus>.eight {
+  background-color: #ff9b1a;
+  grid-column: 3/5;
+  grid-row: 5;
+}
 
-        .firstBauhaus>.nine {
-          background-color: rgb(184, 184, 184);
-          grid-column: 1/4;
-          grid-row: 5;
-        }
+.firstBauhaus>.nine {
+  background-color: rgb(184, 184, 184);
+  grid-column: 1/4;
+  grid-row: 5;
+}
 
-        .firstBauhaus>.ten {
-          border-top: solid white 0px;
-          background-color: rgb(255, 255, 255);
-          grid-column: 2/5;
-          z-index: 3;
-          grid-row: 4/5;
-        }
+.firstBauhaus>.ten {
+  border-top: solid white 0px;
+  background-color: rgb(255, 255, 255);
+  grid-column: 2/5;
+  z-index: 3;
+  grid-row: 4/5;
+}
 
 
+/* SECOND BAUHAUS */
+.secondBauhaus {
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
+  width: 450px;
+  height: 350px;
+  padding-left: 20px;
+  gap: 5px;
+}
+
+.secondBauhaus div {
+
+  margin: -5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+}
+
+.secondBauhaus .one {
+  background-color: rgb(231, 231, 231);
+  border-left: 5px rgb(28, 43, 43) solid;
+  border-top: 5px rgb(28, 43, 43) solid;
+}
+
+.secondBauhaus .two {
+  background-color: rgb(233, 18, 18);
+  border: 5px rgb(28, 43, 43) solid;
+  grid-column: 3 / span 1;
+  grid-row: 2/ span 4;
+}
+
+.secondBauhaus .three {
+  background-color: rgb(231, 231, 231);
+  border-top: 5px rgb(28, 43, 43) solid;
+  border-right: 5px rgb(28, 43, 43) solid;
+  border-bottom: 5px rgb(28, 43, 43) solid;
+}
+
+.secondBauhaus .four {
+  background-color: rgb(41, 117, 194);
+  border: 5px rgb(28, 43, 43) solid;
+}
+
+
+.secondBauhaus .five {
+  background-color: rgb(231, 231, 231);
+  border: 5px rgb(28, 43, 43) solid;
+}
+
+.secondBauhaus .six {
+  background-color: rgb(226, 226, 8);
+  border: 5px rgb(28, 43, 43) solid;
+  grid-column: 2 / span 1;
+  grid-row: 4 / span 2;
+}
+
+.secondBauhaus .seven {
+  background-color: rgb(231, 231, 231);
+  border-right: 5px rgb(28, 43, 43) solid;
+  border-left: 5px rgb(28, 43, 43) solid;
+  border-bottom: 5px rgb(28, 43, 43) solid;
+}
+
+
+
+
+/* THIRD BAUHAUS */
 .thirdBauhaus>div>span {
-          color: black;
-          font-size: 30px;
-        }
+  color: black;
+  font-size: 30px;
+}
 
-        .thirdBauhaus>div {
-          border: solid black 3px;
-        }
+.thirdBauhaus>div {
+  border: solid black 3px;
+}
 
-        .thirdBauhaus {
-          border: solid rgb(0, 0, 0) 30px;
-          display: grid;
-          grid-template-columns: repeat(4, 1fr);
-          grid-gap: 0px;
-          grid-auto-rows: minmax(100px, auto);
-          background-color: rgb(86, 86, 86);
-        }
+.thirdBauhaus {
+  border: solid rgb(0, 0, 0) 30px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 0px;
+  grid-auto-rows: minmax(100px, auto);
+  background-color: rgb(86, 86, 86);
+}
 
-        .thirdBauhaus>.one {
-          background-color: rgb(255, 27, 27);
-          grid-column: 1/3;
-          grid-row: 1/3;
+.thirdBauhaus>.one {
+  background-color: rgb(255, 27, 27);
+  grid-column: 1/3;
+  grid-row: 1/3;
 
-        }
+}
 
-        .thirdBauhaus>.two {
-          background-color: rgb(255, 255, 255);
-          grid-column: 3/5;
-          grid-row: 1/3;
-        }
+.thirdBauhaus>.two {
+  background-color: rgb(255, 255, 255);
+  grid-column: 3/5;
+  grid-row: 1/3;
+}
 
-        .thirdBauhaus>.three {
+.thirdBauhaus>.three {
 
-          background-color: #ffffff;
-          grid-column: 1/3;
-          grid-row: 3;
-        }
+  background-color: #ffffff;
+  grid-column: 1/3;
+  grid-row: 3;
+}
 
-        .thirdBauhaus>.four {
+.thirdBauhaus>.four {
 
-          background-color: #ffffff;
-          grid-column: 3/5;
-          grid-row: 3;
-        }
+  background-color: #ffffff;
+  grid-column: 3/5;
+  grid-row: 3;
+}
 
-        .thirdBauhaus>.five {
-          width: 63%;
-          background-color: rgb(255, 234, 0);
-          grid-column: 1;
-          grid-row: 4;
-          z-index: 1;
-        }
+.thirdBauhaus>.five {
+  width: 63%;
+  background-color: rgb(255, 234, 0);
+  grid-column: 1;
+  grid-row: 4;
+  z-index: 1;
+}
 
-        .thirdBauhaus>.six {
-          height: 150px;
-          background-color: #ffffff;
-          grid-column: 1/3;
-          grid-row: 4;
-        }
+.thirdBauhaus>.six {
+  height: 150px;
+  background-color: #ffffff;
+  grid-column: 1/3;
+  grid-row: 4;
+}
 
-        .thirdBauhaus>.seven {
-          width: 200px;
+.thirdBauhaus>.seven {
+  width: 200px;
 
-          background-color: rgb(252, 252, 252);
-          grid-column: 3;
-          grid-row: 4;
+  background-color: rgb(252, 252, 252);
+  grid-column: 3;
+  grid-row: 4;
 
-        }
+}
 
-        .thirdBauhaus>.eight {
+.thirdBauhaus>.eight {
 
-          background-color: #ffffff;
-          grid-column: 4/5;
-          grid-row: 4;
-        }
+  background-color: #ffffff;
+  grid-column: 4/5;
+  grid-row: 4;
+}
 
-        .thirdBauhaus>.nine {
-          background-color: rgb(16, 115, 191);
-          grid-column: 3;
-          grid-row: 4;
-          z-index: 1;
-          height: 80%;
-        }
+.thirdBauhaus>.nine {
+  background-color: rgb(16, 115, 191);
+  grid-column: 3;
+  grid-row: 4;
+  z-index: 1;
+  height: 80%;
+}
