@@ -76,7 +76,6 @@ main {
     }
 
     .homemenu {
-        margin-left: 550px;
         /* Esto empujaba el menú fuera de la pantalla móvil */
         font-size: 2em;
     }
@@ -104,14 +103,6 @@ main {
     }
 
     /* lista del menu */
-    .navbar-nav {
-        /* display: flex; /* Bootstrap ya lo hace en desktop */
-        /* position: relative; */
-        margin-right: 20%;
-        /* Posicionamiento custom para desktop */
-        width: 70%;
-        /* Ancho custom para desktop */
-    }
 
     /* boton de busqueda */
     .buscador {
@@ -123,8 +114,6 @@ main {
         scale: 1.2;
         /* position: relative; */
         width: 16vw;
-        right: 40vw;
-        left: -320px;
         top: -0px;
     }
 
@@ -140,7 +129,6 @@ main {
     .navbar-brand {
         display: flex;
         /* position: relative; */
-        left: 4vw;
         top: 20px;
         color: white;
         font-size: 3em;
