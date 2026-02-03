@@ -19,30 +19,31 @@ body {
     width: 100%;
     background-image: url(../media/bg/foto-del-patron-de-textura-de-la-pared.webp);
     background-size: cover;
-    padding-top: 55px;
+    padding-top: 0px;
 }
 
 main {
     margin-top: 90px;
-   
+
 }
 
 
 /* --- NAV LINKS (global) --- */
-.navbar-nav li > a {
+.navbar-nav li>a {
     padding: 5px 10px 5px 10px;
     transition: 100ms;
 }
 
 .navbg {
-    background-color: rgb(58, 68, 41); /* El color verde oscuro de fondo */
+    background-color: rgb(58, 68, 41);
+    /* El color verde oscuro de fondo */
     width: 100%;
     margin: 0px;
     background-size: cover;
     height: 101%;
 }
 
-.navbar-nav li > a:hover {
+.navbar-nav li>a:hover {
     border-top: solid rgb(255, 255, 255) 2.5px;
 }
 
@@ -66,11 +67,20 @@ main {
 /* ------------------------------------------------ */
 @media (min-width: 992px) {
 
+    #ticket {
+    margin-top: -2px;
+}
+
+    body {
+        padding-top: 55px;
+    }
+
     .homemenu {
-        margin-left: 550px; /* Esto empujaba el menú fuera de la pantalla móvil */
+        margin-left: 550px;
+        /* Esto empujaba el menú fuera de la pantalla móvil */
         font-size: 2em;
     }
-    
+
     .exhibitionmenu {
         font-size: 2em;
     }
@@ -87,7 +97,8 @@ main {
         position: fixed;
         width: 100%;
         top: 0;
-        height: 100px; /* Altura original para desktop */
+        height: 100px;
+        /* Altura original para desktop */
         align-content: center;
         border-bottom: solid rgb(255, 255, 255) 1px;
     }
@@ -95,39 +106,42 @@ main {
     /* lista del menu */
     .navbar-nav {
         /* display: flex; /* Bootstrap ya lo hace en desktop */
-        position: relative;
-        right: 20vw; /* Posicionamiento custom para desktop */
-        width: 70vw; /* Ancho custom para desktop */
+        /* position: relative; */
+        margin-right: 20%;
+        /* Posicionamiento custom para desktop */
+        width: 70%;
+        /* Ancho custom para desktop */
     }
 
     /* boton de busqueda */
     .buscador {
         background-color: #f2f2f2;
     }
-    
+
     /* Contenedor del formulario */
     .d-flex {
         scale: 1.2;
-        position: relative;
+        /* position: relative; */
         width: 16vw;
-        right: 40vw; /* ESTO sacaba el formulario del viewport en móvil */
-        top: 4.7vh;
+        right: 40vw;
+        left: -320px;
+        top: -0px;
     }
 
     /* boton de tickets */
     #ticketLi {
         display: block;
-        position: relative;
-        top: 2.5vh;
+        /* position: relative; */
+        top: 25px;
         scale: 1.3;
     }
 
     /* Texto THe Rothko Museum */
     .navbar-brand {
         display: flex;
-        position: relative;
+        /* position: relative; */
         left: 4vw;
-        top: 2.2vh;
+        top: 20px;
         color: white;
         font-size: 3em;
     }
@@ -139,6 +153,7 @@ main {
         list-style: none;
     }
 }
+
 /* Asegúrate de que las reglas de bg1, mark, etc., que te di antes también estén aplicadas 
    para solucionar el desbordamiento del contenido principal debajo del navbar. */
 
@@ -222,7 +237,7 @@ footer a {
 }
 
 
-footer{
+footer {
     border-top: white 3px solid;
     background-color: #3a4429;
 }
