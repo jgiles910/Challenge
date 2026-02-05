@@ -13,10 +13,9 @@
     align-items: center;
     justify-content: space-around;
     scale: 0.7;
-
     border-radius: 20px;
-        background-color: rgb(99, 99, 99);
-        border: rgb(255, 255, 255) solid 5px;
+    background-color: rgb(99, 99, 99);
+    border: rgb(255, 255, 255) solid 5px;
 }
 
 .fullname {
@@ -76,7 +75,7 @@
     font-size: 30px;
     padding: 70px;
 
-        font-family: 'Courier New', Courier, monospace;
+    font-family: 'Courier New', Courier, monospace;
 
 }
 
