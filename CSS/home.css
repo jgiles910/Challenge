@@ -1,33 +1,25 @@
-/* Media query para aplicar estilos solo en pantallas pequeñas (hasta 991px, el breakpoint por defecto de navbar-expand-lg) */
 @media (max-width: 991.98px) {
 
-    /* Asegura que el contenedor del menú no se estire horizontalmente */
     .navbar-collapse {
         width: 100%;
-        /* Añade overflow-x: hidden si el problema persiste, para cortar cualquier desbordamiento horizontal */
         overflow-x: hidden;
     }
 
-    /* Asegura que los elementos de la lista y los enlaces ocupen el ancho completo del menú desplegado y no se desborden */
     .navbar-nav,
     .nav-item,
     .nav-link,
     .d-flex {
         width: 100%;
-        /* Elimina márgenes negativos que puedan causar overflow */
         margin-left: 0 !important;
         margin-right: 0 !important;
-        /* Añade algo de padding vertical para que no estén tan pegados */
         padding-left: 1rem;
         padding-right: 1rem;
     }
 
-    /* Ajusta los elementos del formulario de búsqueda para que se vean bien verticalmente */
     .buscador.form-control,
     .buscador.btn {
         width: 100%;
         margin-bottom: 0.5rem;
-        /* Espacio entre el input y el botón en móvil */
     }
 
     .buscador.form-control.me-2 {

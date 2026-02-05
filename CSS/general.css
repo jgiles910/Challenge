@@ -72,6 +72,11 @@ main {
         padding-top: 55px;
     }
 
+    .navbar-nav{
+        position: absolute;
+        left: 35vw;
+    }
+
     .homemenu {
         font-size: 2em;
     }
