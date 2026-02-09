@@ -22,11 +22,6 @@ body {
     padding-top: 0px;
 }
 
-main {
-    margin-top: 90px;
-
-}
-
 header {
     z-index: 10;
     position: fixed;
