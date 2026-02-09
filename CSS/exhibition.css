@@ -369,3 +369,9 @@
   z-index: 1;
   height: 80%;
 }
+
+/* XML */
+
+.xml{
+  background-color: grey;
+}
