@@ -23,73 +23,50 @@
 <body>
 
   <header>
-    <!-- Usa container-fluid si quieres que ocupe todo el ancho, o container si quieres un ancho fijo -->
-    <nav class="navbg navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <h1 class="navbar-brand">The Bauhaus Museum</h1>
-
-        <!-- 1. Botón Hamburguesa (Solo visible en móvil) -->
-        <button class="navbar-toggler bg-white" type="button" data-bs-toggle="collapse"
-          data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-          aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <!-- 2. Contenido que se colapsa -->
-        <div class="collapse navbar-collapse navbg" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="homemenu nav-link active" aria-current="page" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="exhibitionmenu nav-link" href="exhibition.html">Exhibition</a>
-            </li>
-            <li id="ticketLi" class="nav-item">
-              <a id="ticket" class="nav-link" href="tickets.html">Get your ticket!</a>
-            </li>
-          </ul>
-          <form class="d-flex" role="search">
-            <input class="buscador form-control me-2" type="search" placeholder="Escribe aqui" aria-label="Search" />
-            <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
-          </form>
-        </div>
-      </div>
-    </nav>
-
-    <!-- <nav class="navbar navbg navbar-expand-lg navbar-light">
-  <div class="container-fluid">
-    <a class="navbar-brand" href="#">The Bauhaus Museum</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav">
-        <li class="nav-item">
-              <a class="homemenu nav-link active" aria-current="page" href="home.html">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="exhibitionmenu nav-link" href="exhibition.html">Exhibition</a>
-            </li>
-            <li id="ticketLi"><a id="ticket" href="tickets.html">Get your ticket!</a></li>
-            </li>
-      </ul>
-    </div>
-  </div>
-</nav> -->
-    <!-- <nav class="navbg navbar navbar-expand-lg">
-      <div class="container-fluid">
-        <h1 class="navbar-brand">The Bauhaus Museum</h1>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-           mx-auto para centrar la lista en la ventana -->
-  
-  </header>
+        <!-- Usa container-fluid si quieres que ocupe todo el ancho, o container si quieres un ancho fijo -->
+        <nav class="navbg navbar navbar-expand-lg">
+            <div class="container-fluid"> <!-- O "container" -->
+                <!-- Logo/Título a la izquierda por defecto en móvil, centrado en desktop -->
+                <h1 class="navbar-brand me-auto me-lg-0 mx-lg-auto">The Bauhaus Museum</h1>
+                <!-- Botón Hamburguesa (Solo visible en móvil) -->
+                <button class="navbar-toggler bg-white ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Contenido que se colapsa -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!-- mx-auto para centrar la lista en la ventana -->
+                    <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="boton-menu nav-link active" aria-current="page" href="home.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="boton-menu nav-link" href="exhibition.html">Exhibition</a>
+                        </li>
+                        <li id="ticketLi" class="nav-item">
+                            <a id="ticket" class="nav-link" href="tickets.html">Get your ticket!</a>
+                        </li>
+                        <li>
+                            <div class="d-flex ms-auto">
+                                <form class="d-flex" role="search">
+                                    <input class="buscador form-control me-2" type="search" placeholder="Escribe aqui"
+                                        aria-label="Search" />
+                                    <button class="buscador btn btn-outline-success" type="submit">Buscar</button>
+                                </form>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
 
   <main>
+    <!-- INTRODUCCION A LA PAGINA -->
     <div class="bg1">
-
       <div>
         <h2>Welcome!</h2>
-
         <p>
           The Bauhaus was a revolutionary school of art, design, and architecture founded in 1919 in Weimar, Germany, by
           the architect Walter Gropius. His core vision was to bridge the gap between "fine arts" and craftsmanship,
@@ -100,7 +77,6 @@
           closed by the Nazi regime in 1933, laying the global foundation for modern design and the International Style
           we see today.
         </p>
-
       </div>
       <div class="images">
         <img class="mark" src="../media/bauhaus/448050239693.jpg" alt="">
@@ -113,33 +89,42 @@
 
     <h2> Core characteristics of painting design</h2>
     <div class="bg2">
-        <div>  
-          <p> <strong>Geometric Precision:</strong> Artists relied heavily on a basic vocabulary of circles, squares, and triangles to create balanced yet asymmetric compositions. Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus beatae suscipit quam, quidem neque, fuga dolor accusantium sequi voluptatibus reprehenderit deserunt esse laboriosam commodi minima quibusdam, libero culpa a dignissimos! </p>
-          <div class="imagen"><img src="../media/bauhaus/formas_geometricas.png" alt=""></div>
-        </div>
-
-        <div>
-          <p> <strong>Color Theory: </strong>Design was often driven by a scientific study of color. Wassily Kandinsky famously linked
-          specific colors to shapes (e.g., yellow for triangles, blue for circles, and red for squares) to evoke
-          different emotional and psychological responses.</p>
-          <div class="imagen"><img src="../media/bauhaus/color_theory.jpg" alt=""></div>
-          
-        </div>
-      
-        <div>
-        <p> <strong>Primary Palette:</strong> Most designs favored a restricted palette of red, yellow, and blue, often grounded by neutral blacks, whites, and greys to maintain clarity and impact. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod cumque, quis beatae iure ullam amet recusandae earum eaque quos dolores sit soluta deserunt aut placeat fugiat, hic excepturi? Rem, possimus.</p>
-          <div class="imagen"><img src="../media/bauhaus/color_palette.png" alt=""></div>
-        </div>
-
-        <div>
-          <p> <strong>Architectural Influence:</strong> Paintings often featured flat planes and overlapping shapes that suggested 3D depth,
-          mirroring the structural logic of modern buildings.
-          <strong>Minimalism:</strong> Following the principle of "less is more," artists stripped away all ornamentation, leaving only
-          clean lines and pure forms.</p>
-          <div class="imagen"><img src="../media/bauhaus/v963-ning-07a.jpg" alt=""></div>
-        
+      <div>
+        <p> <strong>Geometric Precision:</strong> Artists relied heavily on a basic vocabulary of circles, squares, and
+          triangles to create balanced yet asymmetric compositions. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Doloribus beatae suscipit quam, quidem neque, fuga dolor accusantium sequi voluptatibus reprehenderit
+          deserunt esse laboriosam commodi minima quibusdam, libero culpa a dignissimos! </p>
+        <div class="imagen"><img src="../media/bauhaus/formas_geometricas.png" alt=""></div>
       </div>
 
+      <div>
+        <p> <strong>Color Theory: </strong>Design was often driven by a scientific study of color. Wassily Kandinsky
+          famously linked
+          specific colors to shapes (e.g., yellow for triangles, blue for circles, and red for squares) to evoke
+          different emotional and psychological responses.</p>
+        <div class="imagen"><img src="../media/bauhaus/color_theory.jpg" alt=""></div>
+
+      </div>
+
+      <div>
+        <p> <strong>Primary Palette:</strong> Most designs favored a restricted palette of red, yellow, and blue, often
+          grounded by neutral blacks, whites, and greys to maintain clarity and impact. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Quod cumque, quis beatae iure ullam amet recusandae earum eaque quos dolores sit
+          soluta deserunt aut placeat fugiat, hic excepturi? Rem, possimus.</p>
+        <div class="imagen"><img src="../media/bauhaus/color_palette.png" alt=""></div>
+      </div>
+
+      <div>
+        <p> <strong>Architectural Influence:</strong> Paintings often featured flat planes and overlapping shapes that
+          suggested 3D depth,
+          mirroring the structural logic of modern buildings.
+          <strong>Minimalism:</strong> Following the principle of "less is more," artists stripped away all
+          ornamentation, leaving only
+          clean lines and pure forms.
+        </p>
+        <div class="imagen"><img src="../media/bauhaus/v963-ning-07a.jpg" alt=""></div>
+
+      </div>
     </div>
   </main>
 
