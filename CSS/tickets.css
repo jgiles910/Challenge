@@ -48,6 +48,11 @@
     margin-left: 0px;
 }
 
+#error{
+    font-weight: bolder;
+    font-size: 3em;   
+}
+
 .nums{
     margin-left:3vw;
 }
@@ -60,11 +65,9 @@
     display: flex;
     justify-content: center;
     margin-top: 50px;
-
 }
 
 .botonCalcular {
-
     scale: 1.5;
 }
 
