@@ -1,3 +1,5 @@
+
+/* COLECCIONES CSS */
 .collections {
   display: flex;
   flex-direction: column;
@@ -53,14 +55,7 @@
   color: rgba(255, 255, 255, 0.85);
 }
 
-header {
-  position: fixed;
-  top: 0px;
-}
-
-
-/*--- Todo lo de bauhaus aqui ---*/
-
+/* BAUHAUS */
 .bauhausPaintings {
   margin-top: 30px;
   margin-bottom: 30px;
@@ -78,9 +73,7 @@ header {
   padding: 60px;
 }
 
-
-
-/* Tablet */
+/* TABLET */
 @media (max-width: 900px) {
   .bauhausPaintings {
     display: flex;
@@ -96,7 +89,7 @@ header {
 
 }
 
-/* mobile phone*/
+/* MOVIL*/
 @media (max-width: 758px) {
 
   .collections>ul {
@@ -123,6 +116,7 @@ header {
 }
 
 
+/* TODOS LOS BAUHAUS VVVVVVV */
 /* FIRST BAUHAUS */
 .firstBauhaus>div>span {
   color: black;
@@ -212,6 +206,8 @@ header {
   z-index: 3;
   grid-row: 4/5;
 }
+
+
 
 
 /* SECOND BAUHAUS */

@@ -1,10 +1,10 @@
+/* MEDIA Q PARA MOVILES */
 @media (max-width: 991.98px) {
-    
-    header{
+
+    header {
         position: fixed;
         top: 0px;
     }
-
     /* Ajusta los elementos del formulario de búsqueda para que se vean bien verticalmente */
     .buscador.form-control,
     .buscador.btn {
@@ -23,7 +23,6 @@
 }
 
 .mark {
-
     width: 500px;
     height: 300px;
     bottom: 1%;
@@ -34,7 +33,6 @@
 
 .mark2 {
     border: solid white 2px;
-
     width: 500px;
     height: 300px;
     bottom: 20px;
@@ -53,7 +51,8 @@
     opacity: 80%;
 }
 
-.bg1{
+/* BACKGROUNDS */
+.bg1 {
     border-radius: 4px;
     border: solid 2px black;
     margin-top: 97px;
@@ -68,7 +67,6 @@
 }
 
 .bg1>div {
-    
     padding: 10px;
     top: 0px;
     margin: 10px;
@@ -82,29 +80,7 @@
     letter-spacing: 1.3px;
     text-align: center;
     padding: 30px;
-
 }
-
-h2 {
-    color: white;
-    font-weight: 400;
-    margin: 10px;
-    font-size: 37px;
-    text-align: center;
-    align-self: center;
-}
-
-
-.images {
-    flex-wrap: wrap;
-    width: 100%;
-    overflow: hidden;
-    height: 400px;
-    align-content: center;
-    justify-content: space-evenly;
-    display: flex;
-}
-
 
 .bg2 {
     justify-content: left;
@@ -118,22 +94,6 @@ h2 {
     font-size: 23px;
     padding: 5px;
 }
-
-.imagen>img {
-
-    object-fit: cover;
-    width: 100%;
-    height: 400px;
-}
-
-.imagen {
-    width: 100%;
-    overflow: hidden;
-    align-items: flex-end;
-    display: flex;
-    justify-content: center;
-}
-
 .bg2>div {
     border: solid black 2px;
     border-radius: 4px;
@@ -147,7 +107,41 @@ h2 {
     justify-content: space-between;
 }
 
-.separator{
+h2 {
+    color: white;
+    font-weight: 400;
+    margin: 10px;
+    font-size: 37px;
+    text-align: center;
+    align-self: center;
+}
+
+.images {
+    flex-wrap: wrap;
+    width: 100%;
+    overflow: hidden;
+    height: 400px;
+    align-content: center;
+    justify-content: space-evenly;
+    display: flex;
+}
+
+.imagen>img {
+    object-fit: cover;
+    width: 100%;
+    height: 400px;
+}
+
+.imagen {
+    width: 100%;
+    overflow: hidden;
+    align-items: flex-end;
+    display: flex;
+    justify-content: center;
+}
+
+
+.separator {
     margin-top: 40px;
     border: solid rgb(0, 0, 0) 1px;
     width: 100%;

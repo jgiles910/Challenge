@@ -1,5 +1,3 @@
-/* --- Tickets CSS --- */
-
 .formulario {
     position: relative;
     top: -14.52vh;
@@ -48,6 +46,7 @@
     margin-left: 0px;
 }
 
+/* MENSAJE DE ERROR */
 #error{
     font-weight: bolder;
     font-size: 3em;   
@@ -132,6 +131,8 @@ input {
 option {
     color: black;
 }
+
+/* DESCRIPCION DE LA DERECHA */
 
 .aside {
     margin: 50px;

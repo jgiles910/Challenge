@@ -25,17 +25,14 @@
         <!-- Usa container-fluid si quieres que ocupe todo el ancho, o container si quieres un ancho fijo -->
         <nav class="navbg navbar navbar-expand-lg">
             <div class="container-fluid"> <!-- O "container" -->
-
                 <!-- Logo/Título a la izquierda por defecto en móvil, centrado en desktop -->
                 <h1 class="navbar-brand me-auto me-lg-0 mx-lg-auto">The Bauhaus Museum</h1>
-
                 <!-- Botón Hamburguesa (Solo visible en móvil) -->
                 <button class="navbar-toggler bg-white ms-auto" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-
                 <!-- Contenido que se colapsa -->
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- mx-auto para centrar la lista en la ventana -->
@@ -64,11 +61,13 @@
         </nav>
     </header><br>
 
+    <!-- FORMULARIO -->
     <div class="formulario">
 
         <form id="form">
             <h1>Ticket purchase</h1>
             <ul class="ulform">
+                <!-- NOMBRE -->
                 <li>
                     <div class="fullname input-group input-group-lg">
                         <span class="input-group-text" id="inputGroup-sizing-lg">Full Name</span>
@@ -76,7 +75,7 @@
                             aria-describedby="inputGroup-sizing-lg">
                     </div>
                 </li><br>
-
+                <!-- EMAIL -->
                 <li>
                     <div class="email input-group input-group-lg">
                         <span class="input-group-text" id="inputGroup-sizing-lg">Email</span>
@@ -84,14 +83,14 @@
                             aria-describedby="inputGroup-sizing-lg">
                     </div>
                 </li><br>
-
+                <!-- FECHA -->
                 <li>
                     <div class="mb-3">
                         <label for="fecha" class="form-label">Select the date:</label>
                         <input type="date" class="form-control" id="visit" name="fecha">
                     </div>
                 </li><br>
-
+                <!-- HORA -->
                 <li>
                     Select the time slot you prefer:
                     <select id="select" class="form-select form-select-lg mb-3" aria-label="Large select example">
@@ -107,7 +106,7 @@
                     </select>
 
                 </li><br>
-
+                <!-- TIPO DE TICKET -->
                 <li>Select the ticket type you want to buy:</li>
                 <ul class="ulform">
 
@@ -133,7 +132,7 @@
                         </div>
                     </li>
                 </ul><br>
-
+                <!-- CANTIDAD -->
                 <li class="quantityText">
                     <label for="quantity">Select the ticket quantity you want:</label>
                     <input id="quantity" min="1" type="range" class="form-range" max="10" id="customRange2">
@@ -150,7 +149,7 @@
                     </div>
 
                 </li><br>
-
+                <!-- VISITA GUIADA -->
                 <li class="visitText">
                     <div class="guidedSwitch form-check form-switch">
                         <label class="form-check-label" for="flexSwitchCheckDefault">Would you like a guided visit?
@@ -169,8 +168,8 @@
                         value="Calculate"></div>
 
             </ul>
-
         </form>
+        <!-- FIN DE FORMULARIO -->
         <div class="aside">
             <p id="error"></p>
             <p id="summary"></p>
@@ -214,12 +213,8 @@
                 </div>
             </div>
         </div>
-
     </footer>
 
-
     <script src="../JS/tickets.js"></script>
-
 </body>
-
 </html>
