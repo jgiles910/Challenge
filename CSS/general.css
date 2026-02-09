@@ -22,9 +22,20 @@ body {
     padding-top: 0px;
 }
 
+main {
+    margin-top: 90px;
+
+}
+
+header {
+    z-index: 10;
+    position: fixed;
+    width: 100%;
+}
+
+
 /* --- NAV LINKS --- */
 .navbar-nav li>a {
-    padding: 5px 10px 5px 10px;
     transition: 100ms;
 }
 
@@ -45,7 +56,6 @@ body {
 #ticket {
     color: rgb(240, 240, 240);
     padding: 1px 20px 1px 20px;
-    margin-left: 100px;
     border-radius: 20px;
     background-color: rgb(85, 186, 70);
 }
@@ -55,12 +65,43 @@ body {
     border: solid rgb(255, 255, 255) 2.5px;
 }
 
+@media (max-width: 991px) {
+
+    .navbar-nav,
+    .nav-item,
+    .nav-link,
+    .d-flex {
+        font-size: 1.15em ;
+        width: 100%;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .boton-menu {
+        margin: 5px 0 5px 0;
+    }
+
+    #ticket{
+        text-align: center;
+        font-size: 1.3em;
+        margin: 5px 0 20px 0;
+    }
+
+    .navbar-collarpse {
+        width: 100%;
+        overflow-x: hidden;
+        margin: 0 45px 0 45px;
+    }
+}
 
 /* ESCRITORIO (min-width: 992px) */
 @media (min-width: 992px) {
 
     #ticket {
         margin-top: 4px;
+        margin-left: 100px;
     }
 
 
