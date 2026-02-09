@@ -74,7 +74,13 @@
 }
 
 /* TABLET */
-@media (max-width: 900px) {
+@media (max-width: 992px) {
+
+  
+    header {
+        position: fixed;
+        top: 0px;
+    }
   .bauhausPaintings {
     display: flex;
     flex-direction: column;
@@ -91,6 +97,11 @@
 
 /* MOVIL*/
 @media (max-width: 758px) {
+
+    header {
+        position: fixed;
+        top: 0px;
+    }
 
   .collections>ul {
     display: flex;
