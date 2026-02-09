@@ -1,4 +1,3 @@
-/* Media query para aplicar estilos solo en pantallas pequeñas (hasta 991px, el breakpoint por defecto de navbar-expand-lg) */
 @media (max-width: 991.98px) {
 
     /* Asegura que el contenedor del menú no se estire horizontalmente */

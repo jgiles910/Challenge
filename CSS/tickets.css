@@ -13,10 +13,9 @@
     align-items: center;
     justify-content: space-around;
     scale: 0.7;
-
     border-radius: 20px;
-        background-color: rgb(99, 99, 99);
-        border: rgb(255, 255, 255) solid 5px;
+    background-color: rgb(99, 99, 99);
+    border: rgb(255, 255, 255) solid 5px;
 }
 
 .fullname {
@@ -45,12 +44,12 @@
 }
 
 .rangeNums {
-    width: 120%;
-    margin-left: -54px;
+    width: 150%;
+    margin-left: 0px;
 }
 
-.rangeNums label {
-    margin-left: 55px;
+.nums{
+    margin-left:3vw;
 }
 
 .guidedSwitch {
@@ -69,15 +68,10 @@
     scale: 1.5;
 }
 
-
-
-
 #form {
     font-size: 30px;
     padding: 70px;
-
-        font-family: 'Courier New', Courier, monospace;
-
+    font-family: 'Courier New', Courier, monospace;
 }
 
 #calculateFinalPrize {
@@ -128,7 +122,6 @@ input {
 }
 
 input {
-
     color: black;
     font-size: 20px;
 }
