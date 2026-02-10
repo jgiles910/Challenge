@@ -73,6 +73,23 @@
   padding: 60px;
 }
 
+/*  XML */
+iframe{
+width: 100%;
+}
+
+.xml{
+  width: 60%;
+  border: solid black;
+}
+
+.xmlSection{
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-direction: row;
+}
+
 /* TABLET */
 @media (max-width: 992px) {
 
