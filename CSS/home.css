@@ -72,12 +72,12 @@
 }
 
 h2 {
-  color: white;
-  font-weight: 400;
-  font-size: 32px;
-  text-align: center;
-  width: 100%;
-  margin: 20px;
+    color: white;
+    font-weight: 400;
+    font-size: 32px;
+    text-align: center;
+    width: 100%;
+    margin: 20px;
 }
 
 .images {
@@ -112,6 +112,28 @@ h2 {
 
 @media (max-width: 991.98px) {
 
+    .bg1>div>p {
+        color: rgb(235, 224, 224);
+        width: 100%;
+        margin: 0px;
+        font-size: 20px;
+        letter-spacing: 1.3px;
+        text-align: center;
+        padding: 10px;
+    }
+
+    .mark,
+    .mark2,
+    .mark3 {
+        border: solid black 4px;
+        width: 100%;
+        border-radius: 2px;
+        opacity: 90%;
+        margin: 10px;
+        object-fit: cover;
+        overflow: hidden;
+    }
+
     header {
         position: fixed;
         top: 0px;
@@ -122,7 +144,7 @@ h2 {
         border-radius: 4px;
         border: solid 2px black;
         margin-top: 58px;
-        
+
     }
 
     .bg2>div {

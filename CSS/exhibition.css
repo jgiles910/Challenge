@@ -66,24 +66,24 @@
 }
 
 .bauhausPaintings>div {
-  width: 600px;
+width: 572px;
   border: solid black 10px;
-  height: 600px;
+  height: 590px;
   background-color: rgb(207, 207, 207);
   padding: 60px;
 }
 
 /*  XML */
-iframe{
-width: 100%;
+iframe {
+  width: 100%;
 }
 
-.xml{
+.xml {
   width: 60%;
   border: solid black;
 }
 
-.xmlSection{
+.xmlSection {
   width: 100%;
   justify-content: center;
   display: flex;
@@ -108,8 +108,9 @@ width: 100%;
   }
 
   .bauhausPaintings>div {
-    width: 80%;
-    margin: 20px 20px 20px 20px;
+    margin-top: 40px;
+    /*! width: 83%; */
+    height: 591px;
   }
 
   .collections {
@@ -161,17 +162,16 @@ width: 100%;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
   }
 
   .bauhausPaintings>div {
-    width: 100%;
-    margin: 10px 0px 10px 0px;
+    width: 90%;
   }
 }
 
 
-/* TODOS LOS BAUHAUS VVVVVVV */
+/* TODOS LOS BAUHAUS  */
 /* FIRST BAUHAUS */
 .firstBauhaus>div>span {
   color: black;
@@ -271,8 +271,8 @@ width: 100%;
   grid-template-columns: 2fr 2fr 2fr 2fr;
   grid-template-rows: 2fr 2fr 2fr 2fr;
   width: 450px;
-  height: 350px;
-  padding-left: 20px;
+  height: 211px;
+  /*! padding-left: 20px; */
   gap: 5px;
 }
 
