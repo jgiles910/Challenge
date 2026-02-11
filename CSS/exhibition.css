@@ -66,7 +66,7 @@
 }
 
 .bauhausPaintings>div {
-width: 572px;
+  width: 572px;
   border: solid black 10px;
   height: 590px;
   background-color: rgb(207, 207, 207);
@@ -79,16 +79,18 @@ iframe {
 }
 
 .xml {
-  width: 60%;
-  border: solid black;
+  width: 30%;
+  border: solid black 3px;
 }
 
 .xmlSection {
+  margin-bottom: 30px;
   width: 100%;
   justify-content: center;
   display: flex;
   flex-direction: row;
 }
+
 
 /* TABLET */
 @media (max-width: 992px) {
@@ -97,7 +99,7 @@ iframe {
   header {
     position: fixed;
     top: 0px;
-    border-bottom: solid black 2px;
+    
   }
 
   .bauhausPaintings {
@@ -426,8 +428,3 @@ iframe {
   height: 80%;
 }
 
-/* XML */
-
-.xml {
-  background-color: #cccccc;
-}
