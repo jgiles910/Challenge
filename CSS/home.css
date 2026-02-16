@@ -27,21 +27,23 @@
     filter: brightness(70%);
 }
 
-.bg1>div {
-
+.bg1>.welcome {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     padding: 10px;
     top: 0px;
-    margin: 10px;
 }
 
 .bg1>div>p {
+    line-height: 2.0em;
     color: rgb(235, 224, 224);
-    width: 100%;
+    width: 60%;
     margin: 0px;
-    font-size: 30px;
-    letter-spacing: 1.3px;
+    font-size: 23px;
     text-align: center;
-    padding: 30px;
+    padding: 10px 20px 10px 20px;
 }
 
 .bg2 {
@@ -59,11 +61,11 @@
 }
 
 .bg2>div {
+    margin: 8px;
     border: solid black 2px;
     border-radius: 4px;
     background-color: #3a4429d9;
     padding: 30px;
-    margin: 10px;
     width: 460px;
     align-items: flex-start;
     display: flex;
@@ -77,7 +79,8 @@ h2 {
     font-size: 32px;
     text-align: center;
     width: 100%;
-    margin: 20px;
+    padding-top: 20px ;
+    
 }
 
 .images {
@@ -113,6 +116,7 @@ h2 {
 @media (max-width: 991.98px) {
 
     .bg1>div>p {
+        line-height: 1.8em;
         color: rgb(235, 224, 224);
         width: 100%;
         margin: 0px;
