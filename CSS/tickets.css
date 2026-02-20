@@ -1,163 +1,246 @@
+/* CONTENEDOR FORMULARIO */
 .formulario {
-    position: relative;
-    top: -40px;
-    margin-bottom: -130px;
-    letter-spacing: 3px;
+    margin-top: 110px;
+    margin-bottom: 40px;
+    padding: 20px;
     display: flex;
     flex-direction: row;
-    width: 100%;
-    background-repeat: no-repeat;
-    opacity: 80%;
-    background-size: cover;
-    align-items: center;
-    justify-content: space-around;
-    scale: 0.7;
-    border-radius: 20px;
-    background-color: rgb(99, 99, 99);
-    border: rgb(255, 255, 255) solid 5px;
-}
-
-.fullname {
-    margin-bottom: 20px;
-}
-
-.email {
-    margin-bottom: 20px;
-}
-
-.A,
-.S,
-.C {
-    position: relative;
-    top: 5px;
-    margin-right: 50px;
-    scale: 1.6;
-}
-
-.quantityText {
-    margin-top: 20px;
-}
-
-.visitText {
-    margin-top: 20px;
-}
-
-.rangeNums {
-    width: 150%;
-    margin-left: 0px;
-}
-
-/* MENSAJE DE ERROR */
-#error{
-    font-weight: bolder;
-    font-size: 3em;   
-}
-
-.nums{
-    margin-left:3vw;
-}
-
-.guidedSwitch {
-    margin: 10px 10px 30px 20px;
-}
-
-.divBotonCalcular {
-    display: flex;
+    align-items: flex-start;
     justify-content: center;
-    margin-top: 50px;
+    gap: 30px;
+    width: 100%;
+    background-color: transparent;
 }
 
-.botonCalcular {
-    scale: 1.5;
-}
-
+/* FORMULARIO */
 #form {
-    font-size: 30px;
-    padding: 70px;
+    font-size: 18px;
+    padding: 40px;
     font-family: 'Courier New', Courier, monospace;
+    background-color: rgba(100,100,100, 0.85);
+    border: rgb(255, 255, 255) solid 3px;
+    border-radius: 20px;
+    width: 100%;
+    max-width: 650px;
+    letter-spacing: 1px;
 }
 
-#calculateFinalPrize {
-    margin-top: 20px;
-    font-size: 20px;
-}
-
-#visit {
-    font-size: 20px;
-}
-
-form>h1 {
-    position: relative;
-    left: 5%;
+/* TITULO FORMULARIO */
+form > h1 {
     font-weight: 200;
-    letter-spacing: 20px;
-    padding: 20px 10px 20px 10px;
+    letter-spacing: 15px;
+    padding: 15px 10px;
     color: rgb(239, 239, 239);
-    font-size: 30px;
-    width: 90%;
+    font-size: 26px;
+    width: 100%;
     text-align: center;
     background-color: rgb(136, 136, 136);
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 8px;
+    margin-bottom: 30px;
     border-top: 1px solid rgb(255, 255, 255);
 }
 
-select {
-    font-size: 20px;
+/* LISTA FORMULARIO */
+.ulform {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0;
+    list-style: none;
+}
+
+/* INPUTS */
+.fullname,
+.email {
+    width: 100%;
 }
 
 input {
+    color: black;
+    font-size: 16px;
     padding: 5px;
     border-radius: 7px;
 }
 
-#calculateFinalPrize {
-    align-self: center;
-    width: 120px;
+select {
+    font-size: 16px;
+}
+
+/* RADIO BUTTONS */
+.A, .S, .C {
+    position: relative;
+    top: 3px;
+    margin-right: 20px;
+    scale: 1.4;
+}
+
+/* CANTIDAD*/
+.quantityText {
+    margin-top: 10px;
+}
+
+.rangeNums {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 4px;
+}
+
+.nums {
+    margin-left: 0;
+}
+
+/* VISITA GUIADA */
+.visitText {
+    margin-top: 10px;
+}
+
+.guidedSwitch {
+    margin: 8px 0 20px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* DESCUENTO */
+#discount {
+    font-size: 16px;
+    width: 100%;
+    max-width: 200px;
+}
+
+/* BOTON CALCULAR */
+.divBotonCalcular {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.botonCalcular {
+    font-size: 18px;
+    padding: 10px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: 2px solid white;
+    background-color: rgb(85, 186, 70);
+    color: white;
+    letter-spacing: 2px;
+    transition: background-color 0.2s;
+}
+
+.botonCalcular:hover {
+    background-color: rgb(60, 150, 50);
+}
+
+/* PANEL SUMMARY*/
+.aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    width: 380px;
+    min-width: 280px;
+    flex-shrink: 0;
+    position: sticky;
+    top: 120px;
 }
 
 #error {
+    font-weight: bolder;
+    font-size: 2.5em;
     color: red;
-}
-
-.ulform {
-    display: flex;
-    flex-direction: column;
-}
-
-input {
-    color: black;
-    font-size: 20px;
-}
-
-option {
-    color: black;
-}
-
-/* DESCRIPCION DE LA DERECHA */
-
-.aside {
-    margin: 50px;
-    font-size: 20px;
-    display: flex;
-    justify-content: flex-start;
-    width: 40%;
-    align-items: center;
-    height: 200px;
+    text-align: center;
+    margin-bottom: 10px;
 }
 
 #summary {
     border: solid white 2px;
-    font-size: 30px;
+    font-size: 18px;
     border-radius: 10px;
     width: 100%;
-    height: 570px;
-    background-color: rgb(105, 105, 105);
+    background-color: rgba(105, 105, 105, 0.9);
     text-align: center;
     align-content: center;
-    line-height: 50px;
-    padding: 50px;
+    line-height: 2em;
+    padding: 30px 20px;
+    display: none;
 }
 
-#summary {
-    display: none;
+/* MEDIA Q TABLET*/
+@media (max-width: 992px) {
+
+    .formulario {
+        margin-top: 70px;
+        flex-direction: column;
+        align-items: center;
+        padding: 15px;
+        gap: 20px;
+    }
+
+    #form {
+        padding: 30px 25px;
+        max-width: 100%;
+        font-size: 16px;
+    }
+
+    form > h1 {
+        font-size: 22px;
+        letter-spacing: 8px;
+    }
+
+    .aside {
+        width: 100%;
+        position: static;
+    }
+
+    #summary {
+        font-size: 16px;
+    }
+}
+
+/* MEDIA Q MOVIL*/
+@media (max-width: 576px) {
+
+    .formulario {
+        margin-top: 65px;
+        padding: 10px;
+    }
+
+    #form {
+        padding: 20px 15px;
+        font-size: 15px;
+        border-radius: 12px;
+    }
+
+    form > h1 {
+        font-size: 18px;
+        letter-spacing: 5px;
+        padding: 12px 8px;
+    }
+
+    .botonCalcular {
+        font-size: 16px;
+        padding: 10px 20px;
+        width: 100%;
+    }
+
+    .A, .S, .C {
+        scale: 1.2;
+        margin-right: 12px;
+    }
+
+    #discount {
+        max-width: 100%;
+        width: 100%;
+    }
+
+    .rangeNums {
+        font-size: 13px;
+    }
+
+    #summary {
+        font-size: 15px;
+        line-height: 1.8em;
+        padding: 20px 15px;
+    }
 }

@@ -1,6 +1,6 @@
-<artworks > 
+<artworks>
 
-    <artwork1>
+    <artwork>
 
         <title>Urban and Rural Composition</title>
 
@@ -8,9 +8,9 @@
 
         <year> 2024</year>
 
-    </artwork1>
+    </artwork>
 
-    <artwork2>
+    <artwork>
 
         <title>Chromatic Transit in T</title>
 
@@ -18,9 +18,9 @@
 
         <year>2026</year>
 
-    </artwork2>
+    </artwork>
 
-    <artwork3>  
+    <artwork>
 
         <title>Structure of Stillness</title>
 
@@ -28,6 +28,6 @@
 
         <year>2021</year>
 
-    </artwork3>
-    
+    </artwork>
+
 </artworks>
